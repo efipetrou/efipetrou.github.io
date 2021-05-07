@@ -1,5 +1,5 @@
 <script>
-	import Logo from '../images/logo.svelte';
+	import Logo from '../images/Logo.svelte';
 	import RomdimLogo from '../images/romdim/Logo.svelte';
 	import EatLogo from '../images/eat/LogoBig.svelte';
 	import TatLogo from '../images/tat/Logo.svelte';
