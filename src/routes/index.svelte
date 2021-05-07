@@ -67,14 +67,14 @@
 		<p class="cursor-pointer hover:text-hover" on:click={copyToClipboard}>{emailText}</p>
 	</div>
 
-	<div class="fixed bottom-4">
+	<div class="mt-20 sm:fixed sm:bottom-4">
 		<h4 class="text-sm font-bold">Web Designer</h4>
 		<h1 class="text-xl efi">EFI PETROU</h1>
-		<p class="w-1/3 text-base">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathize with people, strong in collaboration, initiative taker. Looking to explore further the magical land of UX Research.</p>
+		<p class="sm:w-1/3 text-base">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathize with people, strong in collaboration, initiative taker. Looking to explore further the magical land of UX Research.</p>
 	</div>
-
 </div>
-<div class="py-4 col-span-6 flex flex-col space-y-8 {rd || eat || tat ? 'overflow-hidden' : ''}">
+
+<div class="mt-8 col-span-6 flex flex-col space-y-8 {rd || eat || tat ? 'overflow-hidden' : ''}">
 	<label class="border border-black aspect-w-16 aspect-h-9">
 		<input type="checkbox" bind:checked={rd} class="hidden">
 		<RomdimLogo class="w-1/4 m-auto" />
