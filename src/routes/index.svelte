@@ -90,16 +90,16 @@
 </div>
 
 <div class="absolute top-0 left-0 w-screen hidden" class:fly={rd}>
-	<div on:click={() => rd = !rd} class="h-1/12vh sm:h-screen w-screen sm:w-1/12 self-stretch"></div>
+	<div on:click={() => rd = !rd} class="h-1/12vh sm:h-auto w-screen sm:w-1/12 self-stretch"></div>
 	<Romdim />
 </div>
 
 <div class="absolute top-0 left-0 w-screen hidden" class:fly={eat}>
-	<div on:click={() => eat = !eat} class="h-1/12vh sm:h-screen w-screen sm:w-1/12 self-stretch"></div>
+	<div on:click={() => eat = !eat} class="h-1/12vh sm:h-auto w-screen sm:w-1/12 self-stretch"></div>
 	<Eat  />
 </div>
 
 <div class="absolute top-0 left-0 w-screen hidden" class:fly={tat}>
-	<div on:click={() => tat = !tat} class="h-1/12vh sm:h-screen w-screen sm:w-1/12 self-stretch"></div>
+	<div on:click={() => tat = !tat} class="h-1/12vh sm:h-auto w-screen sm:w-1/12 self-stretch"></div>
 	<Tat />
 </div>
