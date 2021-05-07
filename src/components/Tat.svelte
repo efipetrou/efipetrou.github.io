@@ -11,7 +11,7 @@
 
 <div class="w-screen sm:w-11/12 bg-white p-4 border-t sm:border-t-0 sm:border-l border-black sm:min-h-screen">
   <div class="flex mb-4">
-    <Logo class="w-24 mr-4 bg-tat" />
+    <Logo class="w-24 h-24 mr-4 bg-tat" />
     <p class="text-2xl w-1/2">TAT is a to-do list web app with an unvarnished non-intrusive design, has a modular layout without infinite categories, just 3 goals per day to achieve & 2 lists, to-do & notes.</p>
   </div>
 
