@@ -10,7 +10,7 @@
 
 	let rd = false;
 	let eat = false;
-	let tat = true;
+	let tat = false;
 
 	const handleKeydown = (event: KeyboardEvent) => {
 		if (event.key == 'Escape') {
