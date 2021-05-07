@@ -62,7 +62,7 @@
     </div>
 
     <div class="flex space-x-4 w-1/2">
-      <img src={Bookshelf} alt="Eat Moodboard - Bookshelf" class="w-1/3" />
+      <img src={Bookshelf} alt="Eat Moodboard - Bookshelf" class="w-1/3 h-1/2" />
     
       <div class="flex flex-col space-y-4">
         <div class="flex space-x-4">
@@ -74,14 +74,14 @@
           <div class="rounded-full h-16 w-16 flex place-items-center eat-color-6"></div>
         </div>
 
-        <div class="flex space-x-4">
+        <div class="flex space-x-4 h-20">
           <img src={Cutlery} alt="Eat Moodboard - Cutlery Gravure" class="w-32">
           <img src={Calendar} alt="Eat Moodboard - Calendar Gravure" class="w-24">
           <img src={GroceryList} alt="Eat Moodboard - Grocery List Gravure" class="w-16">
           <img src={Tips} alt="Eat Moodboard - Tips Gravure" class="w-24">
         </div>
 
-        <div class="flex space-x-4">
+        <div class="flex space-x-4 h-48">
           <img src={RecipeBookCover} alt="Eat Moodboard - Recipe Book Cover" class="w-48" />
           <img src={RecipeBookFront} alt="Eat Moodboard - Recipe Book Front" class="w-60"/>
         </div>
