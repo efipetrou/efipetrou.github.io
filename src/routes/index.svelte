@@ -1,20 +1,4 @@
 <script>
-	import { fly } from 'svelte/transition';
-	// function fly(node, { delay = 0, duration = 400, easing: easing$1 = easing.cubicOut, x = 0, y = 0, opacity = 0 } = {}) {
-  //   const style = getComputedStyle(node);
-  //   const target_opacity = +style.opacity;
-  //   const transform = style.transform === 'none' ? '' : style.transform;
-  //   const od = target_opacity * (1 - opacity);
-  //   return {
-  //       delay,
-  //       duration,
-  //       easing: easing$1,
-  //       css: (t, u) => `
-	// 		transform: ${transform} translate(${(1 - t) * x}px, ${(1 - t) * y}px);
-	// 		opacity: ${target_opacity - (od * u)}`
-  //   };
-	// }
-	
 	import Logo from '../images/logo.svelte';
 	import RomdimLogo from '../images/romdim/Logo.svelte';
 	import EatLogo from '../images/eat/LogoBig.svelte';
