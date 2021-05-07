@@ -1,10 +1,38 @@
 <script>
 	import { fly } from 'svelte/transition';
-	// import Logo from '../images/logo.svg';
-	import romdim from '../images/romdim.png';
-	let un1 = false;
-	let un2 = false;
-	let un3 = false;
+	// function fly(node, { delay = 0, duration = 400, easing: easing$1 = easing.cubicOut, x = 0, y = 0, opacity = 0 } = {}) {
+  //   const style = getComputedStyle(node);
+  //   const target_opacity = +style.opacity;
+  //   const transform = style.transform === 'none' ? '' : style.transform;
+  //   const od = target_opacity * (1 - opacity);
+  //   return {
+  //       delay,
+  //       duration,
+  //       easing: easing$1,
+  //       css: (t, u) => `
+	// 		transform: ${transform} translate(${(1 - t) * x}px, ${(1 - t) * y}px);
+	// 		opacity: ${target_opacity - (od * u)}`
+  //   };
+	// }
+	
+	import Logo from '../images/logo.svelte';
+	import RomdimLogo from '../images/romdim/Logo.svelte';
+	import EatLogo from '../images/eat/LogoBig.svelte';
+	import TatLogo from '../images/tat/Logo.svelte';
+
+	import Romdim from '../components/Romdim.svelte';
+	import Eat from '../components/Eat.svelte';
+	import Tat from '../components/Tat.svelte';
+
+	let rd = false;
+	let eat = false;
+	let tat = true;
+
+	const handleKeydown = (event: KeyboardEvent) => {
+		if (event.key == 'Escape') {
+			rd = eat = tat = false;
+		}
+	};
 
 	let emailText = 'E-MAIL';
 	const copyToClipboard = () => {
@@ -21,79 +49,73 @@
 </script>
 
 <style>
+	.fly {
+		display: flex;
+		flex-direction: column;
+		animation: fly-up 1s;
+	}
+	@media only screen and (min-width: 640px) {
+		.fly {
+			flex-direction: row;
+			animation: fly-left 1s;
+		}
+	}
+	@keyframes fly-up {
+		0% { opacity: 0; transform: translateY(100%); }
+		100% { opacity: 1; transform: translateY(0%); }
+	}
+	@keyframes fly-left {
+		0% { opacity: 0; transform: translateX(100%); }
+		100% { opacity: 1; transform: translateX(0%); }
+	}
 </style>
 
 <svelte:head>
 	<title>Efi Petrou</title>
 </svelte:head>
 
+<svelte:window on:keydown={handleKeydown}/>
+
 <div class="col-span-6">
-	<div class="fixed top-4 flex space-x-4 items-center">
-		<!-- <div class="w-7 h-7 bg-black"></div> -->
-		<!-- <div>
-			<div class="mr-3.5 w-7 h-7 bg-red-600"></div>
-			<div class="w-7 h-7 rounded-full bg-blue-600 absolute top-0 left-3.5"></div>
-			<div class="h-7 w-3.5 rounded-l-3xl bg-yellow-400 absolute top-0 left-3.5"></div>
-		</div> -->
-		<!-- <Logo /> -->
-		<img src="img/logo.svg" alt="" class="w-14 h-14" />
+	<div class="fixed top-4 flex space-x-4 items-center font-base">
+		<Logo class="w-14 h-14" />
 		<a href="https://www.linkedin.com/in/efipetrou" target="_blank" alt="LinkedIn Efi Petrou" class="hover:text-hover">LINKEDIN</a>
 		<p class="cursor-pointer hover:text-hover" on:click={copyToClipboard}>{emailText}</p>
 	</div>
 
 	<div class="fixed bottom-4">
 		<h4 class="text-sm font-bold">Web Designer</h4>
-		<h1 class="text-xl">EFI PETROU</h1>
-		<p class="w-1/3 text-base">Multi-talented perfectionist with creative thinking and a rich background to be inspired from, enthusiast about UX Research, in love with minimalist design
-			Critical Thinking & Observation
-			initiative
-			Teamwork - team player</p>
+		<h1 class="text-xl efi">EFI PETROU</h1>
+		<p class="w-1/3 text-base">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathize with people, strong in collaboration, initiative taker. Looking to explore further the magical land of UX Research.</p>
 	</div>
 
 </div>
-<div class="py-4 col-span-6 flex flex-col space-y-8 {un1 || un2 || un3 ? 'overflow-hidden' : ''}">
-	<label class="border border-black">
-		<input type="checkbox" bind:checked={un1} class="hidden">
-		<img src="{romdim}" alt="romdim">
+<div class="py-4 col-span-6 flex flex-col space-y-8 {rd || eat || tat ? 'overflow-hidden' : ''}">
+	<label class="border border-black aspect-w-16 aspect-h-9">
+		<input type="checkbox" bind:checked={rd} class="hidden">
+		<RomdimLogo class="w-1/4 m-auto" />
 	</label>
-	<label>
-		<input type="checkbox" bind:checked={un2} class="hidden">
-		<img src="img/un1.jpg" alt="test" />
+	<label class="aspect-w-16 aspect-h-9">
+		<input type="checkbox" bind:checked={eat} class="hidden">
+		<EatLogo class="w-full m-auto" />
 	</label>
-	<label>
-		<input type="checkbox" bind:checked={un3} class="hidden">
-		<img src="img/un2.jpg" alt="test" />
+	<label class="aspect-w-16 aspect-h-9 bg-tat">
+		<input type="checkbox" bind:checked={tat} class="hidden">
+		<TatLogo class="w-1/2 m-auto" />
 	</label>
 </div>
 
-{#if un1}
-	<div transition:fly="{{ x: 200, duration: 1000 }}" class="absolute top-0 left-0 w-screen flex">
-		<div on:click={() => un1 = !un1} class="w-1/12 h-screen"></div>
-		<div class="w-11/12 bg-white flex flex-col justify-evenly">
-			<h1 class="font-bold text-2xl">Romdim</h1>
-			<div class="flex justify-start space-x-8">
-				
-				<div class="max-w-xs rounded overflow-hidden shadow-lg my-2">
-					<img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-					<div class="px-6 py-4">
-						<div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-						<p class="text-grey-darker text-base">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-						</p>
-					</div>
-				</div>
+<div class="absolute top-0 left-0 w-screen hidden" class:fly={rd}>
+	<div on:click={() => rd = !rd} class="h-1/12vh sm:h-screen w-screen sm:w-1/12 self-stretch"></div>
+	<Romdim />
+</div>
 
-				<div class="max-w-xs rounded overflow-hidden shadow-lg my-2">
-					<img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-					<div class="px-6 py-4">
-						<div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-						<p class="text-grey-darker text-base">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-						</p>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-{/if}
+<div class="absolute top-0 left-0 w-screen hidden" class:fly={eat}>
+	<div on:click={() => eat = !eat} class="h-1/12vh sm:h-screen w-screen sm:w-1/12 self-stretch"></div>
+	<Eat  />
+</div>
+
+<div class="absolute top-0 left-0 w-screen hidden" class:fly={tat}>
+	<div on:click={() => tat = !tat} class="h-1/12vh sm:h-screen w-screen sm:w-1/12 self-stretch"></div>
+	<Tat />
+</div>

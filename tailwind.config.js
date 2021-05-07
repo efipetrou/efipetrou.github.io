@@ -18,6 +18,9 @@ module.exports = {
         sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
         montserrat: ['Montserrat']
       },
+      height: {
+        '1/12vh': '8.333333vh'
+      },
       screens: {
         //   sm: '640px',
         //   md: '768px',
