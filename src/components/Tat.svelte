@@ -32,9 +32,13 @@
     <Styles class="w-1/2" />
   </div>
 
-  <div class="mt-8 flex w-full">
-    <img src={Keep1} alt="Google Keep Sidebar" class="w-1/4 m-auto">
-    <img src={Keep2} alt="Google Keep ToDo" class="w-1/4 m-auto">
+  <div class="mt-8 flex w-full items-center">
+    <div class="w-1/3">
+      <img src={Keep1} alt="Google Keep Sidebar" class="object-contain">
+    </div>
+    <div class="w-1/3">
+      <img src={Keep2} alt="Google Keep ToDo" class="object-contain">
+    </div>
     <Mobile class="w-1/3" />
   </div>
   
