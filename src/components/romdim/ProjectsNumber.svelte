@@ -1,9 +1,11 @@
 <script>
+  import toggleArrayBool from '../../lib/toggleArrayBool';
   export let classes: string = '';
-  export let hovering = false;
-  export let number: string = '1';
+  export let number: number = 1;
 
-  const toggleHovering = () => hovering = !hovering;
+  export let hoverings: boolean[];
+  
+  const toggleHovering = () => hoverings = toggleArrayBool(hoverings, number);
 </script>
 
 <style>
@@ -24,4 +26,4 @@
   }
 </style>
 
-<p class={`${classes} cursor-pointer text-xl`} class:text-hover={hovering} on:mouseenter={toggleHovering} on:mouseleave={toggleHovering}>{number}</p>
+<p class={`${classes} cursor-pointer text-xs`} class:text-hover={hoverings[number-1]} on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering}>{number}</p>

@@ -18,8 +18,8 @@ module.exports = {
         sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
         montserrat: ['Montserrat']
       },
-      height: {
-        '1/12vh': '8.333333vh'
+      margin: {
+        '26': '6.5rem',
       },
       screens: {
         //   sm: '640px',
@@ -28,6 +28,10 @@ module.exports = {
         //   xl: '1280px',
         //'2xl': '1536px',
         '3xl': '1921px'
+      },
+      spacing: {
+        '22': '5.5rem',
+        '1/12vh': '8.333333vh',
       },
       textColor: {
         'hover': '#F53994',

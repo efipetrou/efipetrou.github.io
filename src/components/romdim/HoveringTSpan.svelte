@@ -1,12 +1,12 @@
 <script>
-  export let number: string;
+  import toggleArrayBool from '../../lib/toggleArrayBool';
+  export let number: number = 1;
   export let coordinates: {x: string, y: string};
-  export let hoveredText: string = 'text-xs efi';
+  // const hoveredText: string = 'sm:text-xs efi';
+  
+  export let hoverings: boolean[];
 
-  export let hovering = false;
-
-  const toggleHovering = () => hovering = !hovering;
+  const toggleHovering = () => hoverings = toggleArrayBool(hoverings, number);
 </script>
 
-
-<tspan x={coordinates.x} y={coordinates.y} class={hovering ? hoveredText : '' } on:mouseenter={toggleHovering} on:mouseleave={toggleHovering}>{number}</tspan>
+<tspan x={coordinates.x} y={coordinates.y} class:efi={hoverings[number-1]} on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering}>{number}</tspan>
