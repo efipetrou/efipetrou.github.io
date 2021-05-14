@@ -1,4 +1,4 @@
-<svg width="668" height="694" viewBox="0 0 668 694" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
+<svg viewBox="0 0 668 694" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
   <title id="logoTitle">Design System - Styles for TAT</title>
   <desc id="logoDesc">Design System - Styles for TAT</desc>
 <g clip-path="url(#clip0)">

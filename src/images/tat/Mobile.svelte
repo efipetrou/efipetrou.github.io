@@ -1,4 +1,4 @@
-<svg width="360" height="640" viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
+<svg viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
   <title id="logoTitle">Mobile Wireframe for TAT</title>
   <desc id="logoDesc">Mobile Wireframe for TAT</desc>
 <rect width="360" height="640" fill="#FDF6E3"/>
