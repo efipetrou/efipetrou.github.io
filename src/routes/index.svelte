@@ -92,7 +92,7 @@
 	<div class="mt-4 sm:block sm:fixed sm:bottom-4" class:hidden={project}>
 		<h4 class="text-sm font-bold">Web Designer</h4>
 		<h1 class="text-xl efi">EFI PETROU</h1>
-		<p class="sm:w-1/3 text-base">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathize with people, strong in collaboration, initiative taker. Looking to explore further the magical land of UX Research.</p>
+		<p class="sm:w-1/3 text-base font-medium">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, looking to explore further the magical land of UX Research.</p>
 	</div>
 </div>
 
