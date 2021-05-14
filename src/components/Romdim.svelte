@@ -8,15 +8,15 @@
   export let eat: boolean = false;
   export let tat: boolean = false;
 
-	const close: void = () => {
+	const close = (): void => {
 		scrollToTop();
 		setTimeout(() => rd = false, 500);
 	};
-  const openEat: void = () => {
+  const openEat = (): void => {
     close();
     eat=true;
   };
-  const openTat: void = () => {
+  const openTat = (): void => {
     close();
     tat=true;
   };
@@ -60,11 +60,10 @@
       <h3 class="hidden sm:block sm:text-2xl">Landing Page</h3>
       <ol class="text-sm sm:text-xl">
         <CaseListItem number={1} description="A wordmark logo was chosen to establish a simple & memorable identification of the company's name. Comfortaa font is ideal due to its round & smooth glyphs to showcase the consultant aspect of the entrepreneur." bind:hoverings={landingHoverings} />
-        <CaseListItem number={2} description='The hand pointer gives a sense of uniqueness & elegance to the overall minimalist & flat design. Through its animation, it triggers the visitor to discover what lies on the next page.' bind:hoverings={landingHoverings}/>
+        <CaseListItem number={2} description='The hand pointer implies a sense of uniqueness & elegance in the overall minimalist & flat design. Through its animation, it triggers the visitor to discover what lies on the next page.' bind:hoverings={landingHoverings}/>
         <CaseListItem number={3} description='The golden paragraph stands out by being right aligned. Roboto Mono indicates the engineering part of romdim as one of the most common monospace fonts used in programming.' bind:hoverings={landingHoverings} />
         <CaseListItem number={4} description='Contact icons in pyramid shape give prominence to Github where a variety of projects & open source contributions can be found.' bind:hoverings={landingHoverings} />
-        <CaseListItem number={5} description='The cross resembles the structural approach.
-        The shape of the cross & its animation is what is needed to emphasise/reflect the structure. The cross changes into an X responsively in tablet & mobile screens' bind:hoverings={landingHoverings} />
+        <CaseListItem number={5} description='The cross divides the 4 core elements of the portfolio, whilst it reflects the structural identity of romdim. In tablet & mobile screens it transforms responsively into an X.' bind:hoverings={landingHoverings} />
       </ol>
     </div>
   </div>
@@ -136,10 +135,10 @@
 
       <h3 class="hidden sm:block text-lg sm:text-2xl">Projects Page</h3>
       <ol class="text-sm sm:text-xl">
-        <CaseListItem number={1} description='Black & White shades create a clean & easy to navigate website & also allow the cases to stand out with their own color.' bind:hoverings={projectsHoverings} />
+        <CaseListItem number={1} description='Black & White shades create a clean & easy to navigate website allowing the cases to stand out with their own color.' bind:hoverings={projectsHoverings} />
         <CaseListItem number={2} description='The icons showcase the work experience gained using various technologies, tools & programming languages & are instantly recognisable by the targeted website visitors.' bind:hoverings={projectsHoverings} />
-        <CaseListItem number={3} description="The carousel portrays up to 4 key elements of romdim's clients, adhering to Nielsen Norman Group's <a href='https://www.nngroup.com/articles/designing-effective-carousels/' target='_blank' class='underline'>advice</a>, depicting the 'good work' while also reassuring that the visitor remains engaged." bind:hoverings={projectsHoverings} />
-        <CaseListItem number={4} description='Breaking the grid gives a fresh tone emphasis to the components.' bind:hoverings={projectsHoverings} />
+        <CaseListItem number={3} description="The carousel portrays up to 4 key elements for each of romdim's clients, adhering to Nielsen Norman Group's <a href='https://www.nngroup.com/articles/designing-effective-carousels/' target='_blank' class='underline'>advice</a>, reassuring that the visitor remains engaged." bind:hoverings={projectsHoverings} />
+        <CaseListItem number={4} description="Breaking the grid drives the visitor's focus. The difference in size suggests the variety in role, tools and time spent with each employer." bind:hoverings={projectsHoverings} />
       </ol>
     </div>
   </div>
