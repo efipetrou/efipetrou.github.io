@@ -47,7 +47,7 @@
 		};
 	}
 
-	const close: void = () => {
+	const close = (): void => {
 		scrollToTop();
 		setTimeout(() => rd = eat = tat = false, 500);
 	};
@@ -101,7 +101,7 @@
 		<input type="checkbox" bind:checked={rd} class="hidden">
 		<RomdimLogo class="w-1/4 m-auto" />
 	</label>
-	<label class="aspect-w-16 aspect-h-9 cursor-pointer" on:click={() => scrollToTop()}>
+	<label class="aspect-w-16 aspect-h-9 cursor-pointer #f4bac8" on:click={() => scrollToTop()}>
 		<input type="checkbox" bind:checked={eat} class="hidden">
 		<EatLogo class="w-full m-auto" />
 	</label>
