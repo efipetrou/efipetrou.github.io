@@ -72,7 +72,7 @@
                             </g>
                         </g>
                     </g>
-                    <text id="description" font-family="RobotoMono-Regular, Roboto Mono" font-size="12" font-weight="normal" line-spacing="16" fill="#000000">
+                    <text id="description" font-family="Roboto Mono" font-size="12" font-weight="normal" line-spacing="16" fill="#000000">
                         <tspan x="14" y="61">MyTomorrows has a mission to provide every </tspan>
                         <tspan x="14" y="77">patient with earlier and better access to </tspan>
                         <tspan x="14" y="93">all possible treatment options in </tspan>
@@ -82,13 +82,13 @@
                     </text>
                     <g id="button/-role-14-off" transform="translate(174.000000, 0.000000)" fill-rule="evenodd">
                         <path d="M20.5110816,-8.28672246e-16 L174,0 L174,0 L174,32 L0,32 L5.52448164e-16,20.5110816 C-3.20988293e-16,13.3789317 0.742604889,10.7926418 2.13706163,8.18523437 C3.53151837,5.57782696 5.57782696,3.53151837 8.18523437,2.13706163 C10.7926418,0.742604889 13.3789317,4.81482439e-16 20.5110816,-8.28672246e-16 Z" id="Rectangle" fill="#000000"></path>
-                        <text id="Role" fill="#FFFFFF" font-family="RobotoMono-Regular, Roboto Mono" font-size="14" font-weight="normal" line-spacing="22">
+                        <text id="Role" fill="#FFFFFF" font-family="Roboto Mono" font-size="14" font-weight="normal" line-spacing="22">
                             <tspan x="70.1972656" y="20">Role</tspan>
                         </text>
                     </g>
                     <g id="button/employer-14-on" fill-rule="evenodd">
                         <path d="M0,0 L158,0 C166.836556,-1.623249e-15 174,7.163444 174,16 L174,32 L174,32 L0,32 L0,0 Z" id="Rectangle" fill="#FFFFFF"></path>
-                        <text id="Employer" fill="#000000" font-family="RobotoMono-Regular, Roboto Mono" font-size="14" font-weight="normal" line-spacing="22">
+                        <text id="Employer" fill="#000000" font-family="Roboto Mono" font-size="14" font-weight="normal" line-spacing="22">
                             <tspan x="53.3945312" y="20">Employer</tspan>
                         </text>
                     </g>

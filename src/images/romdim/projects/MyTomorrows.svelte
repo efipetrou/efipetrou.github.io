@@ -105,7 +105,7 @@
                             </g>
                         </g>
                     </g>
-                    <text id="description" font-family="RobotoMono-Regular, Roboto Mono" font-size="18" font-weight="normal" line-spacing="28" fill="#000000">
+                    <text id="description" font-family="Roboto Mono" font-size="18" font-weight="normal" line-spacing="28" fill="#000000">
                         <tspan x="30" y="101">In the role of Full Stack Engineer &amp; Consultant I identified </tspan>
                         <tspan x="30" y="129">issues, provided recommendations and implemented solutions in-</tspan>
                         <tspan x="30" y="157">time while also analysed potential bottlenecks and threats in </tspan>
@@ -114,13 +114,13 @@
                     <rect id="Rectangle---background+" fill="#000000" fill-rule="evenodd" x="342" y="0.3" width="80" height="50"></rect>
                     <g id="button/role-20-on" transform="translate(382.000000, 2.000000)" fill-rule="evenodd">
                         <path d="M25.638852,-1 L134.361148,-1 C143.276335,-1 146.509198,-0.0717438885 149.768457,1.67132704 C153.027716,3.41439796 155.585602,5.97228371 157.328673,9.23154296 C159.071744,12.4908022 160,15.7236646 160,24.638852 L160,51 L160,51 L0,51 L6.90560205e-16,24.638852 C-4.01235366e-16,15.7236646 0.928256111,12.4908022 2.67132704,9.23154296 C4.41439796,5.97228371 6.97228371,3.41439796 10.231543,1.67132704 C13.4908022,-0.0717438885 16.7236646,-1 25.638852,-1 Z" id="Rectangle" stroke="#E7E7E7" stroke-width="1" fill="#FFFFFF"></path>
-                        <text id="Role" fill="#000000" font-family="RobotoMono-Regular, Roboto Mono" font-size="20" font-weight="normal" line-spacing="28">
+                        <text id="Role" fill="#000000" font-family="Roboto Mono" font-size="20" font-weight="normal" line-spacing="28">
                             <tspan x="56.4960938" y="33">Role</tspan>
                         </text>
                     </g>
                     <g id="button/employer-20-off" transform="translate(222.000000, 0.000000)" fill-rule="evenodd">
                         <path d="M20,0 L140,0 C151.045695,-2.02906125e-15 160,8.954305 160,20 L160,52 L160,52 L0,52 L0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="Rectangle" fill="#000000"></path>
-                        <text id="Employer" fill="#FFFFFF" font-family="RobotoMono-Regular, Roboto Mono" font-size="20" font-weight="normal" line-spacing="28">
+                        <text id="Employer" fill="#FFFFFF" font-family="Roboto Mono" font-size="20" font-weight="normal" line-spacing="28">
                             <tspan x="32.4921875" y="32">Employer</tspan>
                         </text>
                     </g>

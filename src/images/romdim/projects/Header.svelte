@@ -41,10 +41,10 @@
                         </g>
                     </g>
                 </g>
-                <text id="role" fill="#000000" font-family="Comfortaa-Regular, Comfortaa" font-size="22" font-weight="normal">
+                <text id="role" fill="#000000" font-family="Comfortaa" font-size="22" font-weight="normal">
                     <tspan x="364" y="97">Full Stack Engineer/Consultant</tspan>
                 </text>
-                <text id="name" fill="#000000" font-family="Comfortaa-Regular, Comfortaa" font-size="22" font-weight="normal">
+                <text id="name" fill="#000000" font-family="Comfortaa" font-size="22" font-weight="normal">
                     <tspan x="424" y="46">Romanos Tsouroplis</tspan>
                 </text>
                 <g id="romdim-B.V.--small" transform="translate(0.000000, 0.000000)" fill="#000000">
