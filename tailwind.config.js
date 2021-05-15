@@ -15,8 +15,7 @@ module.exports = {
         'tat2': '#859900'
       },
       fontFamily: {
-        sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
-        montserrat: ['Montserrat']
+        sans: ['Quicksand', ...defaultTheme.fontFamily.sans]
       },
       margin: {
         '26': '6.5rem',
