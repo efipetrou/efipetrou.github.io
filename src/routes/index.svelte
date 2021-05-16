@@ -82,21 +82,21 @@
 <svelte:window on:keydown={escape}/>
 
 <div class="sm:col-span-6">
-	<div class="h-16 w-screen z-10 bg-white border-black -mx-4 sm:fixed sm:top-4 flex space-x-4 items-center font-base" class:fixed={project} class:border-b={projectAfter1}>
-		<div class="w-screen h-16 fixed" class:hidden={!project} on:click={close}></div>
+	<div class="h-16 w-screen z-10 bg-white border-black -mx-4 sm:fixed sm:top-4 flex space-x-4 items-center font-base" class:fixed={projectAfter1} class:border-b={projectAfter1}>
+		<div class="w-screen h-16 fixed" class:hidden={!projectAfter1} on:click={close}></div>
 		<Logo class="w-12 h-12 sm:w-14 sm:h-14" />
 		<a href="https://www.linkedin.com/in/efipetrou" target="_blank" alt="LinkedIn Efi Petrou" class="hover:text-hover">LINKEDIN</a>
 		<p class="cursor-pointer hover:text-hover" on:click={copyToClipboard}>{emailText}</p>
 	</div>
 
-	<div class="mt-4 sm:block sm:fixed sm:bottom-4" class:hidden={project}>
+	<div class="mt-4 sm:block sm:fixed sm:bottom-4" class:hidden={projectAfter1}>
 		<h4 class="text-sm font-bold">Web Designer</h4>
 		<h1 class="text-xl efi">EFI PETROU</h1>
-		<p class="sm:w-1/3 text-base font-medium italic">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, looking to explore further the magical land of UX Research.</p>
+		<p class="sm:w-1/3 text-base font-medium">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, looking to explore further the magical land of UX Research.</p>
 	</div>
 </div>
 
-<div class="mt-8 sm:col-span-6 flex flex-col space-y-8" class:overflow-hidden={project} class:hidden={project}>
+<div class="mt-8 sm:col-span-6 flex flex-col space-y-8" class:hidden={projectAfter1}>
 	<label class="border border-black aspect-w-16 aspect-h-9 cursor-pointer" on:click={() => scrollToTop()}>
 		<input type="checkbox" bind:checked={rd} class="hidden">
 		<RomdimLogo class="w-1/4 m-auto" />

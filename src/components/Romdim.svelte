@@ -9,16 +9,16 @@
   export let tat: boolean = false;
 
 	const close = (): void => {
-		scrollToTop();
-		setTimeout(() => rd = false, 500);
+    rd = false;
+		scrollToTop({duration: 0});
 	};
   const openEat = (): void => {
     close();
-    eat=true;
+		setTimeout(() => eat = true, 100);
   };
   const openTat = (): void => {
     close();
-    tat=true;
+		setTimeout(() => tat = true, 100);
   };
 
   import CaseListItem from '../components/romdim/CaseListItem.svelte';

@@ -9,16 +9,16 @@
   export let tat: boolean = false;
 
   const close = (): void => {
-    scrollToTop();
-    setTimeout(() => eat = false, 500);
+    eat = false;
+		scrollToTop({duration: 0});
   };
   const openRd = (): void => {
     close();
-    rd=true;
+		setTimeout(() => rd = true, 100);
   };
   const openTat = (): void => {
     close();
-    tat=true;
+		setTimeout(() => tat = true, 100);
   };
   
   import Logo from '../images/eat/Logo.svelte';
@@ -35,19 +35,18 @@
   import ActionsMobile from '../images/eat/actions-mobile.jpg';
   import Desktop from '../images/eat/desktop.jpg';
   import Mobile from '../images/eat/mobile.jpg';
+
+  import Border from './eat/Border.svelte';
 </script>
 
 <style>
-  .w-1\/10 {
-    width: 10%;
-  }
   .w-7\/8 {
     width: 87.5%;
   }
 </style>
 
-<div class="w-full sm:w-1/2 mb-4">
-  <Logo class="w-24 mr-4 float-left" />
+<div class="w-full flex sm:w-1/2 mb-4">
+  <Logo class="w-full mr-4" />
   <p class="text-sm sm:text-2xl">Eat web app has food as its protagonist & 3 primary functions: to gather recipes, organise a weekly planner & write down a grocery list, using old-fashioned recipe books as an aesthetic guide.</p>
 </div>
 
@@ -64,10 +63,7 @@
     <figcaption class="text-center mt-2 text-sm sm:text-2xl">Stack of Weekly Planners</figcaption>
   </figure>
 
-  <div class="border-l border-black h-32 w-px absolute left-0 top-1/2 transform -translate-y-1/2">
-    <div class="rounded-full h-4 w-4 sm:h-16 sm:w-16 absolute transform -left-4 top-1/2 translate-x-1/2 -translate-y-1/2 bg-efi">
-    </div>
-  </div>
+  <Border left={true} />
 </div>
 
 <!-- <p class="text-right mt-8 text-sm sm:text-2xl">Stack of Weekly Planners</p>
@@ -124,10 +120,7 @@
     <!-- <img src={RecipeBookCover} alt="Eat Moodboard - Recipe Book Cover" class="w-2/6 object-contain absolute left-1/3 transform -translate-x-1/2" /> -->
   </div>
 
-  <div class="border-r border-black h-32 w-px absolute right-0 top-1/2 transform -translate-y-1/2">
-    <div class="rounded-full h-4 w-4 sm:h-16 sm:w-16 absolute transform -left-4 top-1/2 translate-x-1/2 -translate-y-1/2 bg-efi">
-    </div>
-  </div>
+  <Border left={false} />
 </div>
 
 <!-- <p class="my-4 text-right text-sm sm:text-2xl">Moodboard</p>
@@ -180,10 +173,7 @@
     <figcaption class="text-center mt-2 text-sm sm:text-2xl">Actions</figcaption>
   </figure>
 
-  <div class="border-l border-black h-32 w-px absolute left-0 top-1/2 transform -translate-y-1/2">
-    <div class="rounded-full h-4 w-4 sm:h-16 sm:w-16 absolute transform -left-4 top-1/2 translate-x-1/2 -translate-y-1/2 bg-efi">
-    </div>
-  </div>
+  <Border left={true} />
 </div>
 
 <div class="relative sm:flex w-full pr-4">
@@ -204,10 +194,7 @@
     </figure>
   </div>
 
-  <div class="border-r border-black h-32 w-px absolute right-0 top-1/2 transform -translate-y-1/2">
-    <div class="rounded-full h-4 w-4 sm:h-16 sm:w-16 absolute transform -left-4 top-1/2 translate-x-1/2 -translate-y-1/2 bg-efi">
-    </div>
-  </div>
+  <Border left={false} />
 </div>
 
 <!-- <div class="my-4 text-right">
