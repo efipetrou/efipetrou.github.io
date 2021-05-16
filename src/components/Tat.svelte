@@ -9,51 +9,72 @@
   export let tat: boolean = false;
 
   const close = (): void => {
-    scrollToTop();
-    setTimeout(() => tat = false, 500);
+    tat = false;
+		scrollToTop({duration: 0});
   };
   const openRd = (): void => {
     close();
-    rd=true;
+		setTimeout(() => rd = true, 100);
   };
   const openEat = (): void => {
     close();
-    eat=true;
+		setTimeout(() => eat = true, 100);
   };
   
   import Logo from '../images/tat/Logo.svelte';
-  import Calendar from '../images/tat/Calendar.svelte';
-  import PrioritiesToDo from '../images/tat/PrioritiesToDo.svelte';
-  import Styles from '../images/tat/Styles.svelte';
   import Mobile from '../images/tat/Mobile.svelte';
+
+  import Typography from '../images/tat/Typography.svelte';
+  import Icons from '../images/tat/Icons.svelte';
+  import Colors from '../images/tat/Colors.svelte';
+  import Components from '../images/tat/Components.svelte';
 
   import Keep1 from '../images/tat/Keep1.jpg';
   import Keep2 from '../images/tat/Keep2.jpg';
 </script>
 
-<div class="sm:flex mb-4">
-  <Logo class="w-24 h-24 mr-4 bg-tat" />
-  <p class="text-sm sm:text-2xl sm:w-1/2">TAT is a to-do list web app with an unvarnished non-intrusive design, has a modular layout without infinite categories, just 3 goals per day to achieve & 2 lists, to-do & notes.</p>
+<div class="w-full sm:w-1/2 mb-4">
+  <Logo class="w-24 h-24 mr-4 float-left bg-tat" />
+  <p class="text-sm sm:text-2xl">TAT is a to-do list web app with an unvarnished non-intrusive design, has a modular layout without infinite categories, just 3 goals per day to achieve & 2 lists, to-do & notes.</p>
 </div>
 
-<div class="mt-8 flex w-full">
-  <Calendar class="w-1/2" />
-  <PrioritiesToDo class="w-1/2" />
+<div class="mb-4 sm:w-1/2 text-sm sm:text-2xl">
+  <p class="mb-4">It came out as a necessity when I was confronted with all the small chores needed to be done in order to turn a new house into a home. After a lot of unsuccessful trials of analog and digital overcomplicated tools and soon-to-be-lost post-its, I came up with the bare minimum viable product that I could live with, TAT.</p>
+  <p>After my first project (romdim.nl), I understood the importance of the design system which builds consistency & gives the opportunity to reuse every component efficiently.</p>
 </div>
 
-<div class="mt-8 sm:flex w-full items-center">
+<div class="mb-4 flex items-center w-full">
+  <div class="w-6/12 mr-2">
+    <Typography class="w-full" />
+    <Icons class="w-full" />
+  </div>
+  <div class="w-6/12 ml-2">
+    <Colors class="w-full" />
+  </div>
+</div>
+
+<div class="mb-4 sm:w-1/2 text-sm sm:text-2xl">
+  <p class="mb-4">Also, the mobile first approach is the only way forward, when you have limited space to fit the essential elements of your project.</p>
+  <p>Plain & unsophisticated design with straight lines, earthy colours & a well combined typography fulfill its purpose.</p>
+</div>
+
+
+<Components class="mb-4 w-full" />
+
+<!-- <div class="mt-8 sm:flex w-full items-center">
   <div class="text-sm sm:text-2xl sm:w-1/2">
     <p>It came out as a necessity when I was confronted with all the small chores needed to be done in order to turn a new house into a home. After a lot of unsuccessful trials of analog and digital overcomplicated tools and soon-to-be-lost post-its, I came up with the bare minimum viable product that I could live with, TAT.</p>
     
-    <p class="mt-4">After my first project (romdim.nl), I understood the importance of the design system which builds consistency & gives the opportunity to reuse every component efficiently. 
+    <p class="mt-4">After my first project (romdim.nl), I understood the importance of the design system which builds consistency & gives the opportunity to reuse every component efficiently.</p>
     <p>Also, the mobile first approach is the only way forward, when you have limited space to fit the essential elements of your project.</p>
 
     <p class="mt-4">Plain & unsophisticated design with straight lines, earthy colours & a well combined typography fulfill its purpose.</p>
   </div>
-  <Styles class="sm:w-1/2 my-4 sm:my-0" />
-</div>
+</div> -->
 
-<div class="mt-8 flex flex-wrap w-full items-center">
+<p class="mb-4 sm:w-1/2 text-sm sm:text-2xl">Google Keep numbers among the great list of to-do apps, yet TAT excels in its free-notification & privacy-awareness.</p>
+
+<div class="mb-4 flex flex-wrap w-full items-center">
   <div class="w-1/2 sm:w-1/3">
     <img src={Keep1} alt="Google Keep Sidebar" class="object-contain">
   </div>
@@ -63,7 +84,6 @@
   <Mobile class="w-2/3 m-auto sm:w-1/3 my-4 sm:my-0" />
 </div>
 
-<p class="sm:w-1/2 sm:mt-4 text-sm sm:text-2xl">Google Keep numbers among the great list of to-do apps, yet TAT excels in its free-notification & privacy-awareness.</p>
 
 <div class="w-full border border-black aspect-w-16 aspect-h-9 cursor-pointer mt-8" on:click={openRd}>
   <RomdimLogo class="w-1/4 m-auto" />
