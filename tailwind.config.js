@@ -17,6 +17,9 @@ module.exports = {
       fontFamily: {
         sans: ['Quicksand', ...defaultTheme.fontFamily.sans]
       },
+      inset: {
+        '1/12': '8.333333%'
+      },
       margin: {
         '26': '6.5rem',
       },

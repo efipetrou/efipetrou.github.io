@@ -82,8 +82,8 @@
 <svelte:window on:keydown={escape}/>
 
 <div class="sm:col-span-6">
-	<div class="h-16 w-screen z-10 bg-white border-black -mx-4 sm:fixed sm:top-4 flex space-x-4 items-center font-base" class:fixed={projectAfter1} class:border-b={projectAfter1}>
-		<div class="w-screen h-16 fixed" class:hidden={!projectAfter1} on:click={close}></div>
+	<div class="h-16 w-screen sm:w-1/2 z-10 sm:z-auto bg-white sm:border-b-0 border-black -mx-4 sm:fixed sm:top-4 flex space-x-4 items-center font-base" class:fixed={projectAfter1} class:border-b={projectAfter1}>
+		<div class="w-screen h-16 sm:w-1/12 sm:h-screen fixed" class:hidden={!projectAfter1} on:click={close}></div>
 		<Logo class="w-12 h-12 sm:w-14 sm:h-14" />
 		<a href="https://www.linkedin.com/in/efipetrou" target="_blank" alt="LinkedIn Efi Petrou" class="hover:text-hover">LINKEDIN</a>
 		<p class="cursor-pointer hover:text-hover" on:click={copyToClipboard}>{emailText}</p>
@@ -111,8 +111,8 @@
 	</label>
 </div>
 
-<div class="absolute top-0 left-0 w-screen hidden" class:fly={project}>
-	<div class:border-t={project && !projectAfter1} class="mt-16 sm:mt-0 w-screen sm:w-11/12 bg-white p-4 sm:border-l border-black sm:min-h-screen">
+<div class="absolute top-0 left-0 sm:left-1/12 w-screen hidden" class:fly={project}>
+	<div class:border-t={project && !projectAfter1} class="mt-16 sm:mt-0 sm:border-t-0 w-screen sm:w-11/12 bg-white p-4 sm:border-l border-black sm:min-h-screen">
 		{#if rd}
 			<Romdim bind:rd bind:eat bind:tat/>
 		{:else if eat}
