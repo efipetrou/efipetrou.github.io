@@ -15,6 +15,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn
+          rm -rf docs
           yarn export
 
       - name: Deploy 🚀
