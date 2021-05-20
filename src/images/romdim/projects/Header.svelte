@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1028 132" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
+<svg viewBox="0 0 1028 132" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
     <title id="logoTitle">Header</title>
     <desc id="logoDesc">Header of Projects Page of romdim</desc>
     <defs>
