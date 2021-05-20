@@ -98,9 +98,10 @@
 .-translate-x-1\/2\+1 {
   --tw-translate-x: calc(-50% + 1px);
 }
-
-.\34xl\:text-4xl {
-  line-height: 3rem;
+@media only screen and (min-width: 2048px) {
+  .\34xl\:text-4xl {
+    line-height: 3rem;
+  }
 }
 
 .efi {
