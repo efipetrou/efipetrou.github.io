@@ -28,4 +28,4 @@
   }
 </style>
 
-<p class={`${classes} cursor-pointer text-xs sm:text-sm lg:text-lg 2xl:text-xl 4xl:text-3xl`} class:text-hover={hoverings[number-1]} on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering}>{number}</p>
+<p class={`${classes} cursor-pointer text-xs sm:text-sm lg:text-lg 2xl:text-2xl 4xl:text-3xl`} class:text-hover={hoverings[number-1]} on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering}>{number}</p>
