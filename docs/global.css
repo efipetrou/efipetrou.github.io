@@ -1,3 +1,109 @@
+/* 
+  Fonts:
+    - Woff2     Chrome 26+, Opera 23+, Firefox 39+
+    - Woff      Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+
+    - TrueType  Safari, Android, iOS
+    - SVG       Legacy iOS
+
+  unicode-range: only latin
+*/
+
+@font-face {
+  font-family: 'Cantata One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  url('fonts/CantataOne/regular.woff2') format('woff2'),
+        url('fonts/CantataOne/regular.woff') format('woff'),
+        url('fonts/CantataOne/regular.ttf') format('truetype'),
+        url('fonts/CantataOne/regular.svg') format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  url('fonts/Comfortaa/regular.woff2') format('woff2'),
+        url('fonts/Comfortaa/regular.woff') format('woff'),
+        url('fonts/Comfortaa/regular.ttf') format('truetype'),
+        url('fonts/Comfortaa/regular.svg') format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  url('fonts/Montserrat/Mregular.woff2') format('woff2'),
+        url('fonts/Montserrat/regular.woff') format('woff'),
+        url('fonts/Montserrat/regular.ttf') format('truetype'),
+        url('fonts/Montserrat/regular.svg') format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */
+@font-face {
+  font-family: 'Quicksand';
+  src:  url('fonts/Quicksand/bold.woff2') format('woff2'),
+        url('fonts/Quicksand/bold.woff') format('woff'),
+        url('fonts/Quicksand/bold.ttf') format('truetype'),
+        url('fonts/Quicksand/bold.svg') format('svg');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
+@font-face {
+  font-family: 'Quicksand';
+  src:  url('fonts/Quicksand/regular.woff2') format('woff2'),
+        url('fonts/Quicksand/regular.woff') format('woff'),
+        url('fonts/Quicksand/regular.ttf') format('truetype'),
+        url('fonts/Quicksand/regular.svg') format('svg');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
+@font-face {
+  font-family: 'Quicksand';
+  src:  url('fonts/Quicksand/medium.woff2') format('woff2'),
+        url('fonts/Quicksand/medium.woff') format('woff'),
+        url('fonts/Quicksand/medium.ttf') format('truetype'),
+        url('fonts/Quicksand/medium.svg') format('svg');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  url('fonts/RobotoMono/regular.woff2') format('woff2'),
+        url('fonts/RobotoMono/medium.woff') format('woff'),
+        url('fonts/RobotoMono/medium.ttf') format('truetype'),
+        url('fonts/RobotoMono/medium.svg') format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@media only screen and (min-width: 640px) {
+  .sm\:aspect-h-4\.5 {
+    --tw-aspect-h: 4.5;
+  }
+}
+
+.-translate-x-1\/2\+1 {
+  --tw-translate-x: calc(-50% + 1px);
+}
+@media only screen and (min-width: 2048px) {
+  .\34xl\:text-4xl {
+    line-height: 3rem;
+  }
+}
+
 .efi {
 	color: #f53994;
 	stroke: #f53994;
