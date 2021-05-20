@@ -111,15 +111,24 @@
           <Header class="col-span-12 mb-4 hidden sm:block" />
 
           <ProjectsNumber classes='col-start-1 col-span-1 self-start lg:mt-1/2' bind:hoverings={projectsHoverings} number={1} />
-          <Artwishlist class="col-start-2 col-span-10" />
+          <!-- <Artwishlist class="col-start-2 col-span-10" /> -->
+          <div class="col-start-2 col-span-10 w-full">
+            <Artwishlist />
+          </div>
           
           <ProjectsNumber classes='col-start-2 col-span-2 justify-self-center -mt-1/3 lg:mb-4' bind:hoverings={projectsHoverings} number={2} />
           <div class="col-span-8"></div>
 
-          <MyTomorrows class="col-start-5 col-span-7 lg:mb-4" />
+          <!-- <MyTomorrows class="col-start-5 col-span-7 lg:mb-4" /> -->
+          <div class="col-start-5 col-span-7 lg:mb-4 w-full">
+            <MyTomorrows />
+          </div>
           <ProjectsNumber classes='col-start-12 col-span-1 self-start mt-16/10' bind:hoverings={projectsHoverings} number={3} />
           
-          <Mobiquity class="col-start-1 col-span-9 lg:mb-4" />
+          <!-- <Mobiquity class="col-start-1 col-span-9 lg:mb-4" /> -->
+          <div class="col-start-1 col-span-9 lg:mb-4 w-full">
+            <Mobiquity />
+          </div>
           <ProjectsNumber classes='col-start-11 col-span-1 self-start mt-21/10' bind:hoverings={projectsHoverings} number={4} />
         </div>
       </div>
