@@ -2,7 +2,7 @@
   import toggleArrayBool from '../../lib/toggleArrayBool';
   export let number: number = 1;
   export let coordinates: {x: string, y: string};
-  // const hoveredText: string = 'sm:text-xs efi';
+  // const hoveredText: string = 'lg:text-xs efi';
   
   export let hoverings: boolean[];
 

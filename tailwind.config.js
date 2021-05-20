@@ -11,11 +11,17 @@ module.exports = {
     extend: {
       colors: {
         'efi': '#F53994',
+        'eat': '#F4BAC8',
         'tat': '#FDF6E3',
         'tat2': '#859900'
       },
       fontFamily: {
         sans: ['Quicksand', ...defaultTheme.fontFamily.sans]
+      },
+      fontSize: {
+        'xxxs': '.5rem',
+        'xxs': '.6rem',
+        '1.5xl': '1.375rem'
       },
       inset: {
         '1/12': '8.333333%'
@@ -29,7 +35,8 @@ module.exports = {
         //   lg: '1024px',
         //   xl: '1280px',
         //'2xl': '1536px',
-        '3xl': '1921px'
+        '3xl': '1921px',
+        '4xl': '2048px'
       },
       spacing: {
         '22': '5.5rem',
@@ -38,6 +45,10 @@ module.exports = {
       textColor: {
         'hover': '#F53994',
         'tat': '#586E75',
+      },
+      width: {
+        '7/8': '87.5%',
+        '86/100': '87.5%',
       }
     },
   },

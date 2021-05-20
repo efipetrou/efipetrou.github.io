@@ -85,7 +85,7 @@
     <tspan x="367" y="257.342">A keen eye for detail</tspan>
   </text>
   <!-- Numbers -->
-  <text font-size="25" stroke-width=".265" style="line-height:1.25" class="cursor-pointer">
+  <text font-size="25" stroke-width=".265" style="line-height:1.25" class="cursor-pointer sm:text-xl lg:text-1.5xl 2xl:text-xl 4xl:text-xs">
     <HoveringTSpan coordinates={{x: '49.7', y: '34.27'}} bind:hoverings number={1} />
     <HoveringTSpan coordinates={{x: '352', y: '51'}} bind:hoverings number={2} />
     <HoveringTSpan coordinates={{x: '384.31', y: '161.94'}} bind:hoverings number={3} />
