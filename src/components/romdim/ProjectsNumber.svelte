@@ -1,4 +1,6 @@
 <script>
+  // Purgecss classes that are dynamically created and need to be parsed for production non-purging:
+  // text-hover
   import toggleArrayBool from '../../lib/toggleArrayBool';
   export let classes: string = '';
   export let number: number = 1;

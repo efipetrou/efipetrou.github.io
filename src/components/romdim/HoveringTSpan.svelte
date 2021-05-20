@@ -1,4 +1,7 @@
 <script>
+  // Purgecss classes that are dynamically created and need to be parsed for production non-purging:
+  // efi
+  
   import toggleArrayBool from '../../lib/toggleArrayBool';
   export let number: number = 1;
   export let coordinates: {x: string, y: string};

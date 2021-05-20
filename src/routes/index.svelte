@@ -1,4 +1,7 @@
 <script>
+  // Purgecss classes that are dynamically created and need to be parsed for production non-purging:
+  // border-b border-t fixed hidden text-hover
+
   import { scrollToTop } from "svelte-scrollto";
 
 	import Logo from '../images/Logo.svelte';

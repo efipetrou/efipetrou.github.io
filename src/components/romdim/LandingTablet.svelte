@@ -1,3 +1,11 @@
+<script>
+  // Purgecss classes that are dynamically created and need to be parsed for production non-purging:
+  // stroke-current fill-current
+  import HoveringTSpan from './HoveringTSpan.svelte';
+
+  export let hoverings: boolean[];
+</script>
+
 <style>
   /* Need global to override Unused CSS selector warning */
   .animate-x {
@@ -13,12 +21,6 @@
     }
   }
 </style>
-
-<script>
-  import HoveringTSpan from './HoveringTSpan.svelte';
-
-  export let hoverings: boolean[];
-</script>
 
 <svg viewBox="0 0 143.67 143.67" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>

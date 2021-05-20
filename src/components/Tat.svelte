@@ -21,18 +21,18 @@
 		setTimeout(() => eat = true, 100);
   };
 
-  let clientHeight: number;
-  let offsetHeight: number;
-  let height: number;
-  let y: number;
-  let ypx: string = '0';
-  let circleY;
+  // let clientHeight: number;
+  // let offsetHeight: number;
+  // let height: number;
+  // let y: number;
+  // let ypx: string = '0';
+  // let circleY;
 
   // $: console.log('client height ' + clientHeight);
   // $: console.log('offset height ' + offsetHeight);
   // $: console.log('height ' + height);
   // $: console.log('y ' + y);
-	$: ypx = `--ypx:${y > 72 ? y-72 : 0}px`;
+	// $: ypx = `--ypx:${y > 72 ? y-72 : 0}px`;
   // $: console.log('ypx ' + ypx);
   
   import Logo from '../images/tat/Logo.svelte';
@@ -56,14 +56,14 @@
   } */
 </style>
 
-<svelte:window bind:innerHeight={height} bind:scrollY={y}/>
+<!-- <svelte:window bind:innerHeight={height} bind:scrollY={y}/> -->
 
-<div class="w-full sm:w-4/5 xl:w-1/2 4xl:w-2/5 mb-4 4xl:mb-12" bind:clientHeight={offsetHeight}>
+<div class="w-full sm:w-4/5 xl:w-1/2 4xl:w-2/5 mb-4 4xl:mb-12">
   <Logo class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 2xl:w-24 2xl:h-24 4xl:w-32 4xl:h-32 mt-2 mr-2 float-left bg-tat" />
   <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">is a to-do list web app with an unvarnished non-intrusive design, has a modular layout without infinite categories, just 3 goals per day to achieve & 2 lists, to-do & notes.</p>
 </div>
 
-<div bind:clientHeight={clientHeight} class="lg:relative" style="{ypx}">
+<!-- <div class="lg:relative" style="{ypx}"> -->
   <!-- <div class="hidden lg:block rounded-full h-5 w-5 2xl:h-8 2xl:w-8 sticky top-0 left-1/2 transition-transform transition-duration-75 transform -translate-x-1/2-1 translate-y-8 bg-efi z-10" data-scroll data-scroll-sticky> -->
   <!-- <div class="hidden lg:block rounded-full h-5 w-5 2xl:h-8 2xl:w-8 sticky top-0 left-1/2 transition-transform transition-duration-75 transform -translate-x-1/2-1 translate-y-8 bg-efi z-10">
   </div> -->
@@ -123,7 +123,7 @@
     <Mobile class="w-2/3 m-auto my-4 sm:my-0" />
   </div>
 </div>
-</div>
+<!-- </div> -->
 
 <div class="w-full m-auto sm:flex sm:space-x-4">
   <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full border border-black cursor-pointer mt-8" on:click={openRd}>
