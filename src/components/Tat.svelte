@@ -38,10 +38,7 @@
   import Logo from '../images/tat/Logo.svelte';
   import Mobile from '../images/tat/Mobile.svelte';
 
-  // import Typography from '../images/tat/Typography.svelte';
-  // import Icons from '../images/tat/Icons.svelte';
-  // import Colors from '../images/tat/Colors.svelte';
-  import DesignSystem from '../images/tat/DesignSystem1.svelte';
+  import DesignSystem from '../images/tat/DesignSystem.svelte';
   import Components from '../images/tat/Components.svelte';
 
   import Keep1 from '../images/tat/Keep1.jpg';
