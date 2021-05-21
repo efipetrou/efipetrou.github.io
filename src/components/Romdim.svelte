@@ -54,17 +54,12 @@
     writing-mode: tb;
     text-orientation: upright;
   }
-  /* .right-1\/6 {
-    right: 16.666667%;
-  } */
 </style>
 
 <div class="w-full sm:w-4/5 xl:w-1/2 4xl:w-2/5 mb-4">
   <Logo class="w-10 sm:w-12 lg:w-16 2xl:w-28 4xl:w-36 p-2 2xl:p-6 float-left border border-black mt-2 mr-2 2xl:mr-4" />
   <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">Alongside Romanos from <a href="https://romdim.nl" target="_blank" class="underline hover:text-hover">romdim.nl</a>, I created a minimalist portfolio website for his web engineering & consultant LC based in the Netherlands. The design process reflects the company's own approach, simplicity via optimal solution.</p>
 </div>
-<!-- <h1 class="text-2xl lg:text-3xl lg:mt-2"><a href="https://romdim.nl" target="_blank" class="hover:text-hover">romdim.nl <ArrowLink class="inline w-4" /></a></h1>
-<p class="text-sm lg:text-2xl lg:w-1/2 mt-3">Alongside Romanos from romdim, I created a minimalist portfolio website for his web engineering & consultant LC based in the Netherlands. The design process reflects the company's own approach, simplicity via optimal solution.</p> -->
 
 <div class="w-full flex flex-col-reverse sm:flex-row flex-wrap sm:items-center mt-4 sm:mt-8 lg:mt-16">
   <div class="sm:w-1/2 sm:m-auto">
@@ -111,7 +106,6 @@
           <Header class="col-span-12 mb-4 hidden sm:block" />
 
           <ProjectsNumber classes='col-start-1 col-span-1 self-start lg:mt-1/2' bind:hoverings={projectsHoverings} number={1} />
-          <!-- <Artwishlist class="col-start-2 col-span-10" /> -->
           <div class="col-start-2 col-span-10 w-full">
             <Artwishlist />
           </div>
@@ -119,13 +113,11 @@
           <ProjectsNumber classes='col-start-2 col-span-2 justify-self-center -mt-1/3 lg:mb-4' bind:hoverings={projectsHoverings} number={2} />
           <div class="col-span-8"></div>
 
-          <!-- <MyTomorrows class="col-start-5 col-span-7 lg:mb-4" /> -->
           <div class="col-start-5 col-span-7 lg:mb-4 w-full">
             <MyTomorrows />
           </div>
           <ProjectsNumber classes='col-start-12 col-span-1 self-start mt-16/10' bind:hoverings={projectsHoverings} number={3} />
           
-          <!-- <Mobiquity class="col-start-1 col-span-9 lg:mb-4" /> -->
           <div class="col-start-1 col-span-9 lg:mb-4 w-full">
             <Mobiquity />
           </div>
