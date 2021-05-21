@@ -103,10 +103,6 @@
 	}
 </style>
 
-<svelte:head>
-	<title>Efi Petrou</title>
-</svelte:head>
-
 <svelte:window on:keydown={escape}/>
 
 <div class="lg:col-span-6">
