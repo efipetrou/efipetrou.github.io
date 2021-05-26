@@ -58,7 +58,7 @@
   </div>
 
   <figure class="w-2/3 sm:w-1/2 m-auto sm:p-8 4xl:pb-24">
-    <img src={WeeklyPlanner} alt="Eat Weekly Planner" class="m-auto">
+    <img src={WeeklyPlanner} alt="Analog Weekly Planners" class="m-auto">
     <figcaption class="text-center text-xxs lg:text-sm 2xl:text-base lg:mt-2 2xl:mt-4">Analog Weekly Planners</figcaption>
   </figure>
 </div>
@@ -83,30 +83,30 @@
 
   <div class="flex flex-row-reverse items-center w-full sm:w-1/2 sm:px-8 sm:pb-8 4xl:pb-24">
     <div class="flex-1 flex-col items-stretch space-y-4 h-full m-auto">
-      <Circle color="#733080" />
-      <Circle color="#F4BAC8" />
-      <Circle color="#A40607" />
-      <Circle color="#7288B9" />
-      <Circle color="#F0C595" />
-      <Circle color="#F5EBC6" />
+      <Circle color="#733080" title="eminence" />
+      <Circle color="#F4BAC8" title="chantilly" />
+      <Circle color="#A40607" title="sangria" />
+      <Circle color="#7288B9" title="wild blue yonder" />
+      <Circle color="#F0C595" title="new tan" />
+      <Circle color="#F5EBC6" title="scotch mist" />
     </div>
 
     <div class="pr-2 w-7/8 sm:w-86/100">
       <div class="flex flex-row-reverse items-center pb-2">
         <div class="w-3/5 px-4">
           <div class="flex items-center">
-              <img src={Cutlery} alt="Eat Moodboard - Cutlery Gravure" class="w-2/3 object-contain">
-              <img src={GroceryList} alt="Eat Moodboard - Grocery List Gravure" class="w-1/3 object-contain">
+              <img src={Cutlery} alt="Moodboard - Cutlery" class="w-2/3 object-contain">
+              <img src={GroceryList} alt="Moodboard - Grocery List" class="w-1/3 object-contain">
           </div>
           <div class="flex items-center">
-              <img src={Calendar} alt="Eat Moodboard - Calendar Gravure" class="w-1/2 object-contain">
-              <img src={Tips} alt="Eat Moodboard - Tips Gravure" class="w-1/2 object-contain">
+              <img src={Calendar} alt="Moodboard - Calendar" class="w-1/2 object-contain">
+              <img src={Tips} alt="Moodboard - Tips" class="w-1/2 object-contain">
           </div>
         </div>
-        <img src={Bookshelf} alt="Eat Moodboard - Bookshelf" class="w-2/5 object-contain" />
+        <img src={Bookshelf} alt="Moodboard - Book Kiosk" class="w-2/5 object-contain" />
       </div>
 
-      <img src={RecipeBook} alt="Eat Moodboard - Recipe Book" class="w-full object-contain"/>
+      <img src={RecipeBook} alt="Moodboard - Recipe Book" class="w-full object-contain"/>
     </div>
   </div>
 </div>
@@ -125,9 +125,9 @@
   </div>
 
   <div class="flex flex-wrap justify-items-start items-center sm:w-1/2 sm:pt-8 sm:px-8 sm:pb-4 4xl:pb-24">
-    <img src={ActionsMobile} alt="Actions" class="w-7/12">
-    <img src={Mobile} alt="Recipe Wireframe Mobile" class="w-5/12">
-    <img src={Desktop} alt="Recipe Wireframe Desktop" class="w-full m-auto">
+    <img src={ActionsMobile} alt="Wireframe - User Flow" class="w-7/12">
+    <img src={Mobile} alt="Wireframe - Recipe - Mobile version" class="w-5/12">
+    <img src={Desktop} alt="Wireframe - Recipe - Desktop version" class="w-full m-auto">
   </div>
 </div>
 

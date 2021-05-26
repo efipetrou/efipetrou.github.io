@@ -96,10 +96,10 @@
 
   <div class="mb-4 flex flex-wrap w-full sm:w-1/2 items-center sm:px-8 sm:pb-4 4xl:pb-24">
     <div class="w-1/2">
-      <img src={Keep1} alt="Google Keep Sidebar" class="object-contain">
+      <img src={Keep1} alt="Competitor - Google Keep Menu" class="object-contain">
     </div>
     <div class="w-1/2">
-      <img src={Keep2} alt="Google Keep ToDo" class="object-contain">
+      <img src={Keep2} alt="Competitor - Google Keep ToDo" class="object-contain">
     </div>
   </div>
 </div>

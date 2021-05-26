@@ -1,6 +1,6 @@
 <svg viewBox="0 0 1178 924" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
-    <title id="logoTitle">Artwishlist project</title>
-    <desc id="logoDesc">Artwishlist project from Projects Page of romdim</desc>
+    <title id="logoTitle">Project Page - Artwishlist</title>
+    <desc id="logoDesc">Artwishlist project from Projects Page of romdim - Desktop version</desc>
     <defs>
         <linearGradient x1="84.75%" y1="111.399%" x2="58.254%" y2="64.584%" id="a">
         <stop stop-color="#FB7655" offset="0%"/>

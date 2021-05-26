@@ -34,7 +34,9 @@
   }
 </style>
 
-<svg viewBox="0 0 423.33 285.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 423.33 285.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="logoTitle logoDesc" role="img">
+  <title id="logoTitle">Landing Page - Desktop version</title>
+  <desc id="logoDesc">Romdim's landing page - Desktop version</desc>
  <defs>
   <circle id="a" cx="30" cy="30" r="30"/>
  </defs>

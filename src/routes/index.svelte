@@ -109,7 +109,7 @@
 	<div class="h-16 w-screen lg:w-1/2 z-50 lg:z-auto bg-white lg:border-b-0 border-black -mx-4 sm:-mx-8 sm:px-4 lg:fixed lg:top-4 flex space-x-4 items-center text-base sm:text-lg 2xl:text-3xl 4xl:text-4xl" class:fixed={projectAfter1} class:border-b={projectAfter1}>
 		<div class="w-screen h-16 lg:hidden fixed" class:hidden={!projectAfter1} on:click={close}></div>
 		<Logo class="w-12 h-12 sm:w-14 sm:h-14 2xl:w-20 2xl:h-20" />
-		<a href="https://www.linkedin.com/in/efipetrou" target="_blank" alt="LinkedIn Efi Petrou" class:text-hover={linkedInHover} on:mouseenter={linkedInHoverOn} on:mouseleave={linkedInHoverOff} on:touchstart={toggleLinkedInFor10}>LINKEDIN</a>
+		<a href="https://www.linkedin.com/in/efipetrou" target="_blank" class:text-hover={linkedInHover} on:mouseenter={linkedInHoverOn} on:mouseleave={linkedInHoverOff} on:touchstart={toggleLinkedInFor10}>LINKEDIN</a>
 		<p class="cursor-pointer hover:text-hover" class:text-hover={copied} on:touchend|preventDefault={copyEmail} on:click={copyEmail}>{emailText}</p>
 	</div>
 

@@ -1,6 +1,6 @@
 <svg viewBox="0 0 360 384" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
-    <title id="logoTitle">MyTomorrows mobile project</title>
-    <desc id="logoDesc">MyTomorrows mobile view project from Projects Page of romdim</desc>
+    <title id="logoTitle">Project Page - MyTomorrows</title>
+    <desc id="logoDesc">MyTomorrows project from Projects Page of romdim - Mobile version</desc>
     <g fill="none" fill-rule="evenodd">
         <path fill="#FFF" d="M13 196h348v188H13z"/>
         <path fill="#000" d="M147 196h80v30h-80z"/>

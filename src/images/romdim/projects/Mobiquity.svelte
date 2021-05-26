@@ -1,6 +1,6 @@
 <svg viewBox="0 0 1308 968" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
-    <title id="logoTitle">Mobiquity project</title>
-    <desc id="logoDesc">Mobiquity project from Projects Page of romdim</desc>
+    <title id="logoTitle">Project Page - Mobiquity</title>
+    <desc id="logoDesc">Mobiquity project from Projects Page of romdim - Desktop version</desc>
     <g fill="none" fill-rule="evenodd">
         <path fill="#00AFEF" d="M0 0h1263v710H0z"/>
         <path d="M1307.188 416.425a1.563 1.563 0 010 2.213l-18.757 18.757a1.563 1.563 0 01-2.213 0l-18.757-18.757a1.565 1.565 0 112.213-2.213l17.65 17.653 17.651-17.653a1.563 1.563 0 012.213 0zM1307.188 293.782a1.563 1.563 0 01-2.213 0l-17.65-17.653-17.65 17.653a1.565 1.565 0 11-2.214-2.213l18.757-18.757a1.563 1.563 0 012.213 0l18.757 18.757a1.563 1.563 0 010 2.213z" fill="#000" fill-rule="nonzero"/>
