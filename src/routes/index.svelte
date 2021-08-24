@@ -116,7 +116,7 @@
 	<div class="mt-2 sm:mt-4 mb-4 lg:mb-0 lg:block lg:fixed lg:bottom-8" class:hidden={projectAfter1}>
 		<h4 class="text-sm sm:text-base 2xl:text-2xl 4xl:text-3xl font-bold 2xl:mb-1">Web Designer</h4>
 		<h1 class="text-xl sm:text-2xl 2xl:text-4xl 4xl:text-5xl 2xl:mb-3 efi">EFI PETROU</h1>
-		<p class="lg:w-5/12 3xl:w-1/4 text-base sm:text-lg 2xl:text-3xl 4xl:text-4xl">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, looking to explore further the magical land of UX Research.</p>
+		<p class="lg:w-5/12 3xl:w-1/4 text-base sm:text-lg 2xl:text-3xl 4xl:text-4xl">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, exploring further the magical land of UX Research.</p>
 	</div>
 </div>
 
