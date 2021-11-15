@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.933 152.4" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.933 152.4" preserveAspectRatio="none" aria-labelledby="logoTitle logoDesc" role="img" class="{$$props.class}">
   <title id="logoTitle">eat Logo</title>
   <desc id="logoDesc">Big Logo (16:9) for Project eat</desc>
   <path fill="#f4bac8" d="M0 0h270.933v152.4H0z"/>

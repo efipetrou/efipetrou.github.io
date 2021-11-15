@@ -1,27 +1,11 @@
 <script>
-  import { scrollToTop } from 'svelte-scrollto';
-
-  import Logo from '../images/romdim/Logo.svelte';
-	import EatLogo from '../images/eat/LogoBig.svelte';
-	import TatLogo from '../images/tat/Logo.svelte';
-
+  import NextProjects from './NextProjects.svelte';
+  export let mesogheo: boolean = false;
   export let rd: boolean = false;
   export let eat: boolean = false;
   export let tat: boolean = false;
 
-	const close = (): void => {
-    rd = false;
-		scrollToTop({duration: 0});
-	};
-  const openEat = (): void => {
-    close();
-		setTimeout(() => eat = true, 100);
-  };
-  const openTat = (): void => {
-    close();
-		setTimeout(() => tat = true, 100);
-  };
-
+  import Logo from '../images/romdim/Logo.svelte';
   import CaseListItem from '../components/romdim/CaseListItem.svelte';
   import LandingDesktop from '../components/romdim/LandingDesktop.svelte';
   import LandingTablet from '../components/romdim/LandingTablet.svelte';
@@ -160,11 +144,4 @@
   </div>
 </div>
 
-<div class="w-full m-auto sm:flex sm:space-x-4">
-  <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full cursor-pointer mt-8" on:click={openEat}>
-    <EatLogo class="w-full m-auto" />
-  </div>
-  <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full cursor-pointer mt-8 bg-tat" on:click={openTat}>
-    <TatLogo class="w-1/2 m-auto" />
-  </div>
-</div>
+<NextProjects bind:mesogheo bind:rd bind:eat bind:tat currentProject='rd' />

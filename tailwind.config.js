@@ -10,6 +10,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        'mesogheo22': '#39412F',
+        'mesogheo92': '#EBEEE7',
         'efi': '#F53994',
         'eat': '#F4BAC8',
         'tat': '#FDF6E3',

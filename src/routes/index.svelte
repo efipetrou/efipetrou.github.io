@@ -5,14 +5,17 @@
   import { scrollToTop } from "svelte-scrollto";
 
 	import Logo from '../images/Logo.svelte';
+	import MesogheoLogo from '../images/mesogheo/Logo.svelte';
 	import RomdimLogo from '../images/romdim/Logo.svelte';
 	import EatLogo from '../images/eat/LogoBig.svelte';
 	import TatLogo from '../images/tat/Logo.svelte';
 
+	import Mesogheo from '../components/Mesogheo.svelte';
 	import Romdim from '../components/Romdim.svelte';
 	import Eat from '../components/Eat.svelte';
 	import Tat from '../components/Tat.svelte';
 
+	let mesogheo: boolean = false;
 	let rd: boolean = false;
 	let eat: boolean = false;
 	let tat: boolean = false;
@@ -40,7 +43,7 @@
 	};
 
 	let project: boolean;
-	$: project = rd || eat || tat;
+	$: project = mesogheo || rd || eat || tat;
 
 	let projectAfter1: boolean = false;
 	$: {
@@ -55,7 +58,7 @@
 
 	const close = (): void => {
 		scrollToTop();
-		setTimeout(() => rd = eat = tat = false, 500);
+		setTimeout(() => mesogheo = rd = eat = tat = false, 500);
 	};
 
 	const escape = (event: KeyboardEvent): void => {
@@ -114,13 +117,17 @@
 	</div>
 
 	<div class="mt-2 sm:mt-4 mb-4 lg:mb-0 lg:block lg:fixed lg:bottom-8" class:hidden={projectAfter1}>
-		<h4 class="text-sm sm:text-base 2xl:text-2xl 4xl:text-3xl font-bold 2xl:mb-1">Web Designer</h4>
+		<h4 class="text-sm sm:text-base 2xl:text-2xl 4xl:text-3xl font-bold 2xl:mb-1">UI / UX Designer</h4>
 		<h1 class="text-xl sm:text-2xl 2xl:text-4xl 4xl:text-5xl 2xl:mb-3 efi">EFI PETROU</h1>
 		<p class="lg:w-5/12 3xl:w-1/4 text-base sm:text-lg 2xl:text-3xl 4xl:text-4xl">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, exploring further the magical land of UX Research.</p>
 	</div>
 </div>
 
 <div class="lg:col-span-6 flex flex-col lg:justify-between xl:justify-around space-y-4 sm:space-y-8 xl:mb-8" class:hidden={projectAfter1}>
+	<label class="aspect-w-16 aspect-h-9 bg-mesogheo22 cursor-pointer" on:click={() => scrollToTop()}>
+		<input type="checkbox" bind:checked={mesogheo} class="hidden">
+		<MesogheoLogo class="w-1/2 m-auto text-mesogheo92" />
+	</label>
 	<label class="border border-black aspect-w-16 aspect-h-9 cursor-pointer" on:click={() => scrollToTop()}>
 		<input type="checkbox" bind:checked={rd} class="hidden">
 		<RomdimLogo class="w-1/4 m-auto" />
@@ -139,12 +146,14 @@
 <div class="absolute top-0 left-0 lg:left-1/12 w-screen lg:w-11/12 hidden" class:fly={project}>
 	<div class="hidden lg:block absolute top-0 left-0 w-1/12+2 h-full transform -translate-x-full" on:click={close}></div>
 	<div class:border-t={project && !projectAfter1} class="mt-16 lg:mt-0 lg:border-t-0 w-full bg-white p-4 sm:px-8 lg:border-l border-black lg:min-h-screen">
-		{#if rd}
-			<Romdim bind:rd bind:eat bind:tat/>
+		{#if mesogheo}
+			<Mesogheo bind:mesogheo bind:rd bind:eat bind:tat/>
+		{:else if rd}
+			<Romdim bind:mesogheo bind:rd bind:eat bind:tat/>
 		{:else if eat}
-			<Eat bind:rd bind:eat bind:tat/>
+			<Eat bind:mesogheo bind:rd bind:eat bind:tat/>
 		{:else}
-			<Tat bind:rd bind:eat bind:tat/>
+			<Tat bind:mesogheo bind:rd bind:eat bind:tat/>
 		{/if}
 	</div>
 </div>
