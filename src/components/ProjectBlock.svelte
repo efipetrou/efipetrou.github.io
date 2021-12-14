@@ -1,4 +1,8 @@
 <script>
+  // Purgecss classes that are dynamically created and need to be parsed for production non-purging:
+  // sm:-mt-4 4xl:-mt-24 4xl:mb-24
+  // sm:absolute sm:transform sm:-translate-y-full sm:relative
+  // translate-y-8 lg:translate-y-1 sm:mt-8
   import Border from './Border.svelte';
 
   export let absolute: boolean = false;
