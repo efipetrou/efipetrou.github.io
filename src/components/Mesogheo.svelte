@@ -15,6 +15,8 @@
   import Prototype from '../images/mesogheo/Prototype.png';
   import DesignSystem from '../images/mesogheo/DesignSystem.png';
   import Sitemap from '../images/mesogheo/Sitemap.png';
+  import Arizona768 from '../images/mesogheo/Arizona-768w.png';
+  import Arizona1024 from '../images/mesogheo/Arizona-1024w.png';
 
   // import Border from './eat/Border.svelte';
 </script>
@@ -109,6 +111,17 @@
   <figure>
     <img src={Prototype} alt="Prototype">
     <figcaption class="text-center text-xxs lg:text-sm 2xl:text-base lg:mt-1">hi-fi prototype</figcaption>
+  </figure>
+</div>
+
+<div class="flex items-center mb-8 justify-items-center">
+  <figure class="pr-2">
+    <img src={Arizona768} alt="Responsive website at 768px width">
+    <figcaption class="text-xxs lg:text-sm 2xl:text-base lg:mt-1">responsive website @768px width</figcaption>
+  </figure>
+  <figure class="pl-2">
+    <img src={Arizona1024} alt="Responsive website at 1024px width">
+    <figcaption class="text-xxs lg:text-sm 2xl:text-base lg:mt-1">responsive website @1024px width</figcaption>
   </figure>
 </div>
 
