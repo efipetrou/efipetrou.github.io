@@ -5,16 +5,26 @@
   import { scrollToTop } from "svelte-scrollto";
 
 	import Logo from '../images/Logo.svelte';
+	import CognizantLogo from '../images/cognizant/Logo.svelte';
 	import MesogheoLogo from '../images/mesogheo/Logo.svelte';
 	import RomdimLogo from '../images/romdim/Logo.svelte';
 	import EatLogo from '../images/eat/LogoBig.svelte';
 	import TatLogo from '../images/tat/Logo.svelte';
+	import Pharma2 from '../images/cognizant/Pharma2.png';
+	import ECommerce from '../images/cognizant/ECommerce.png';
+	import Pharma1 from '../images/cognizant/Pharma1.png';
 
+	import CognizantPharma2 from '../components/CognizantPharma2.svelte';
+	import CognizantECommerce from '../components/CognizantECommerce.svelte';
+	import CognizantPharma1 from '../components/CognizantPharma1.svelte';
 	import Mesogheo from '../components/Mesogheo.svelte';
 	import Romdim from '../components/Romdim.svelte';
 	import Eat from '../components/Eat.svelte';
 	import Tat from '../components/Tat.svelte';
 
+	let cognizantPharma2: boolean = false;
+	let cognizantECommerce: boolean = false;
+	let cognizantPharma1: boolean = false;
 	let mesogheo: boolean = false;
 	let rd: boolean = false;
 	let eat: boolean = false;
@@ -43,7 +53,7 @@
 	};
 
 	let project: boolean;
-	$: project = mesogheo || rd || eat || tat;
+	$: project = cognizantPharma2 || cognizantECommerce || cognizantPharma1 || mesogheo || rd || eat || tat;
 
 	let projectAfter1: boolean = false;
 	$: {
@@ -58,7 +68,7 @@
 
 	const close = (): void => {
 		scrollToTop();
-		setTimeout(() => mesogheo = rd = eat = tat = false, 500);
+		setTimeout(() => cognizantPharma2 = cognizantECommerce = cognizantPharma1 = mesogheo = rd = eat = tat = false, 500);
 	};
 
 	const escape = (event: KeyboardEvent): void => {
@@ -109,26 +119,56 @@
 <svelte:window on:keydown={escape}/>
 
 <div class="lg:col-span-6">
-	<div class="h-16 w-screen lg:w-1/2 z-50 lg:z-auto bg-white lg:border-b-0 border-black -mx-4 sm:-mx-8 sm:px-4 lg:fixed lg:top-4 flex space-x-4 items-center text-base sm:text-lg 2xl:text-3xl 4xl:text-4xl" class:fixed={projectAfter1} class:border-b={projectAfter1}>
-		<div class="w-screen h-16 lg:hidden fixed" class:hidden={!projectAfter1} on:click={close}></div>
+	<div class="z-50 flex items-center w-screen h-16 -mx-4 space-x-4 text-base bg-white border-black lg:w-1/2 lg:z-auto lg:border-b-0 sm:-mx-8 sm:px-4 lg:fixed lg:top-4 sm:text-lg 2xl:text-3xl 4xl:text-4xl" class:fixed={projectAfter1} class:border-b={projectAfter1}>
+		<div class="fixed w-screen h-16 lg:hidden" class:hidden={!projectAfter1} on:click={close}></div>
 		<Logo class="w-12 h-12 sm:w-14 sm:h-14 2xl:w-20 2xl:h-20" />
 		<a href="https://www.linkedin.com/in/efipetrou" target="_blank" class:text-hover={linkedInHover} on:mouseenter={linkedInHoverOn} on:mouseleave={linkedInHoverOff} on:touchstart={toggleLinkedInFor10}>LINKEDIN</a>
 		<p class="cursor-pointer hover:text-hover" class:text-hover={copied} on:touchend|preventDefault={copyEmail} on:click={copyEmail}>{emailText}</p>
 	</div>
 
-	<div class="mt-2 sm:mt-4 mb-4 lg:mb-0 lg:block lg:fixed lg:bottom-8" class:hidden={projectAfter1}>
-		<h4 class="text-sm sm:text-base 2xl:text-2xl 4xl:text-3xl font-bold 2xl:mb-1">UI / UX Designer</h4>
+	<div class="mt-2 mb-4 sm:mt-4 lg:mb-0 lg:block lg:fixed lg:bottom-8" class:hidden={projectAfter1}>
+		<h4 class="text-sm font-bold sm:text-base 2xl:text-2xl 4xl:text-3xl 2xl:mb-1">UI / UX Designer</h4>
 		<h1 class="text-xl sm:text-2xl 2xl:text-4xl 4xl:text-5xl 2xl:mb-3 efi">EFI PETROU</h1>
-		<p class="lg:w-5/12 3xl:w-1/4 text-base sm:text-lg 2xl:text-3xl 4xl:text-4xl">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, exploring further the magical land of UX Research.</p>
+		<p class="text-base lg:w-5/12 3xl:w-1/4 sm:text-lg 2xl:text-3xl 4xl:text-4xl">Born to be creative & grew up to become a critical thinking perfectionist with a well-rounded background to be inspired from. Able to empathise with people, strong in collaboration, initiative taker. Currently living in the Netherlands, exploring further the magical land of UX Research.</p>
 	</div>
 </div>
 
-<div class="lg:col-span-6 flex flex-col lg:justify-between xl:justify-around space-y-4 sm:space-y-8 xl:mb-8" class:hidden={projectAfter1}>
-	<label class="aspect-w-16 aspect-h-9 bg-mesogheo22 cursor-pointer" on:click={() => scrollToTop()}>
+<div class="flex flex-col space-y-4 lg:col-span-6 lg:justify-between xl:justify-around sm:space-y-8 xl:mb-8" class:hidden={projectAfter1}>
+	<label class="cursor-pointer aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
+		<div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
+			<CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
+		</div>
+		<div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-pharma"></div>
+		<div class="absolute top-0 flex w-1/2 h-full left-1/2">
+			<img src={Pharma2} class="w-5/6 m-auto" alt="img" />
+		</div>
+		<input type="checkbox" bind:checked={cognizantPharma2} class="hidden">
+	</label>
+	<label class="cursor-pointer aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
+		<div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
+			<CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
+		</div>
+		<div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-ecommerce"></div>
+		<div class="absolute top-0 flex w-1/2 h-full left-1/2">
+			<img src={ECommerce} class="w-5/6 m-auto" alt="img" />
+		</div>
+		<input type="checkbox" bind:checked={cognizantECommerce} class="hidden">
+	</label>
+	<label class="cursor-pointer aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
+		<div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
+			<CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
+		</div>
+		<div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-pharma"></div>
+		<div class="absolute top-0 flex w-1/2 h-full left-1/2">
+			<img src={Pharma1} class="w-5/6 m-auto" alt="img" />
+		</div>
+		<input type="checkbox" bind:checked={cognizantPharma1} class="hidden">
+	</label>
+	<label class="cursor-pointer aspect-w-16 aspect-h-9 bg-mesogheo22" on:click={() => scrollToTop()}>
 		<input type="checkbox" bind:checked={mesogheo} class="hidden">
 		<MesogheoLogo class="w-1/2 m-auto text-mesogheo92" />
 	</label>
-	<label class="border border-black aspect-w-16 aspect-h-9 cursor-pointer" on:click={() => scrollToTop()}>
+	<label class="border border-black cursor-pointer aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
 		<input type="checkbox" bind:checked={rd} class="hidden">
 		<RomdimLogo class="w-1/4 m-auto" />
 	</label>
@@ -136,24 +176,30 @@
 		<input type="checkbox" bind:checked={eat} class="hidden">
 		<EatLogo class="w-full m-auto" />
 	</label>
-	<label class="aspect-w-16 aspect-h-9 bg-tat cursor-pointer" on:click={() => scrollToTop()}>
+	<label class="cursor-pointer aspect-w-16 aspect-h-9 bg-tat" on:click={() => scrollToTop()}>
 		<input type="checkbox" bind:checked={tat} class="hidden">
 		<TatLogo class="w-1/2 m-auto" />
 	</label>
-	<div class="h-1 w-full lg:hidden"></div>
+	<div class="w-full h-1 lg:hidden"></div>
 </div>
 
-<div class="absolute top-0 left-0 lg:left-1/12 w-screen lg:w-11/12 hidden" class:fly={project}>
+<div class="absolute top-0 left-0 hidden w-screen lg:left-1/12 lg:w-11/12" class:fly={project}>
 	<div class="hidden lg:block absolute top-0 left-0 w-1/12+2 h-full transform -translate-x-full" on:click={close}></div>
-	<div class:border-t={project && !projectAfter1} class="mt-16 lg:mt-0 lg:border-t-0 w-full bg-white p-4 sm:px-8 lg:border-l border-black lg:min-h-screen">
-		{#if mesogheo}
-			<Mesogheo bind:mesogheo bind:rd bind:eat bind:tat/>
+	<div class:border-t={project && !projectAfter1} class="w-full p-4 mt-16 bg-white border-black lg:mt-0 lg:border-t-0 sm:px-8 lg:border-l lg:min-h-screen">
+		{#if cognizantPharma2}
+			<CognizantPharma2 bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat/>
+		{:else if cognizantECommerce}
+			<CognizantECommerce bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat/>
+		{:else if cognizantPharma1}
+			<CognizantPharma1 bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat/>
+		{:else if mesogheo}
+			<Mesogheo bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat/>
 		{:else if rd}
-			<Romdim bind:mesogheo bind:rd bind:eat bind:tat/>
+			<Romdim bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat/>
 		{:else if eat}
-			<Eat bind:mesogheo bind:rd bind:eat bind:tat/>
+			<Eat bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat/>
 		{:else}
-			<Tat bind:mesogheo bind:rd bind:eat bind:tat/>
+			<Tat bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat/>
 		{/if}
 	</div>
 </div>

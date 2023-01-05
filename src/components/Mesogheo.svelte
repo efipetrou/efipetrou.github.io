@@ -1,5 +1,8 @@
 <script>
   import NextProjects from './NextProjects.svelte';
+  export let cognizantPharma2: boolean = false;
+  export let cognizantECommerce: boolean = false;
+  export let cognizantPharma1: boolean = false;
   export let mesogheo: boolean = false;
   export let rd: boolean = false;
   export let eat: boolean = false;
@@ -7,8 +10,6 @@
   
   import Logo from '../images/mesogheo/LogoSmall.svelte';
   import SWOT1 from '../images/mesogheo/1.SWOT-blurred.png';
-  import SWOT2 from '../images/mesogheo/2.SWOT-blurred.png';
-  // import SWOT3 from '../images/mesogheo/3.SWOT-blurred.png';
   import Persona from '../images/mesogheo/Persona.png';
   import Wireframe from '../images/mesogheo/Wireframe.png';
   import Mockup from '../images/mesogheo/Mockup.png';
@@ -26,8 +27,8 @@
   <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl"><a href="https://mesogheo.it" target="_blank" class="underline">Mesogheo</a> is a Bed & Breakfast, located at the feet of the mount Taburno in South Italy. The goal for the owners, Nicoletta & Fabrizio was to increase their online presence through the creation of a website so that everyone could find more details & book a room.</p>
 </div>
 
-<div class="relative w-full mb-4 sm:flex lg:mb-8">
-  <div class="text-sm sm:w-4/5 xl:w-1/2 4xl:w-4/5 sm:relative sm:text-base lg:text-xl 2xl:text-2xl 4xl:text-3xl">
+<div class="grid w-full grid-cols-2 mb-4 sm:flex lg:mb-8">
+  <div class="col-span-2 text-sm sm:w-4/5 xl:w-1/2 4xl:w-4/5 sm:relative sm:text-base lg:text-xl 2xl:text-2xl 4xl:text-3xl lg:col-span-1">
     <h3 class="sm:mt-8 sm:pr-4 4xl:mb-2 text-efi">The role</h3>
 
     <div class="sm:pr-4">
@@ -35,50 +36,41 @@
     </div>
   </div>
 
-  <!-- <div class="flex flex-wrap items-center justify-items-start sm:w-1/2 sm:pt-8 sm:px-8 sm:pb-4 4xl:pb-24">
-    <img src={ActionsMobile} alt="Wireframe - User Flow" class="w-7/12">
-    <img src={Mobile} alt="Wireframe - Recipe - Mobile version" class="w-5/12">
-    <img src={Desktop} alt="Wireframe - Recipe - Desktop version" class="w-full m-auto">
-  </div> -->
-</div>
+  <div class="col-span-2 text-sm sm:w-4/5 xl:w-1/2 4xl:w-4/5 sm:relative sm:text-base lg:text-xl 2xl:text-2xl 4xl:text-3xl lg:col-span-1">
+    <h3 class="sm:mt-8 sm:pr-4 4xl:mb-2 text-efi">Research</h3>
 
-<div class="mb-4 text-sm sm:w-4/5 xl:w-1/2 4xl:w-4/5 sm:relative lg:mb-8 sm:text-base lg:text-xl 2xl:text-2xl 4xl:text-3xl">
-  <h3 class="sm:mt-8 sm:pr-4 4xl:mb-2 text-efi">Research</h3>
-
-  <div class="sm:pr-4">
-    <p>A trip to Italy to visit the property & the surrounding area was the next step. On site I had to multitask. Apart from taking the photos for the website, I collaborated with the stakeholders in order to clarify & define the weaknesses & strengths of the B&B, resulting in a SWOT analysis & the creation of a Persona.</p>
+    <div class="sm:pr-4">
+      <p>A trip to Italy to visit the property & the surrounding area was the next step. On site I had to multitask. Apart from taking the photos for the website, I collaborated with the stakeholders in order to clarify & define the weaknesses & strengths of the B&B, resulting in a SWOT analysis & the creation of a Persona.</p>
+    </div>
   </div>
 </div>
 
-<div class="flex items-center mb-4 justify-items-center sm:mb-8">
-  <figure>
+<div class="grid grid-cols-2 mb-4 sm:mb-8">
+  <figure class="col-span-2 lg:col-span-1">
     <img src={SWOT1} alt="SWOT Analysis 1" class="w-full">
     <figcaption class="text-center text-xxs lg:text-sm 2xl:text-base lg:mt-1">SWOT analysis</figcaption>
   </figure>
-  <!-- <img src={SWOT2} alt="SWOT Analysis 2" class="w-1/2"> -->
-  <!-- <img src={SWOT3} alt="SWOT Analysis 3" class="w-1/2"> -->
-</div>
-
-<div class="flex items-center mb-4 justify-items-center lg:mb-8">
-  <figure class="w-full">
+  <figure class="col-span-2 lg:col-span-1">
     <img src={Persona} alt="Persona" class="w-full">
     <figcaption class="text-center text-xxs lg:text-sm 2xl:text-base lg:mt-1">persona</figcaption>
   </figure>
 </div>
 
-<div class="mb-4 text-sm sm:w-4/5 xl:w-1/2 4xl:w-4/5 sm:relative lg:mb-8 sm:text-base lg:text-xl 2xl:text-2xl 4xl:text-3xl">
-  <h3 class="sm:mt-8 sm:pr-4 4xl:mb-2 text-efi">Design Process</h3>
+<div class="grid grid-cols-2">
+  <div class="col-span-2 mb-4 text-sm lg:col-span-1 sm:relative lg:mb-8 sm:text-base lg:text-xl 2xl:text-2xl 4xl:text-3xl">
+    <h3 class="sm:mt-8 sm:pr-4 4xl:mb-2 text-efi">Design Process</h3>
 
-  <div class="sm:pr-4">
-    <p>I started constructing the pillars on top of which the whole website was built, the sitemap & the design system. My ultimate goal was to create a design that would provide a clear navigation through the website for the potential customers. The palette of colors was inspired from the buildings & nature that surrounds Mesogheo. In this phase, a logo redesign was deemed as necessary, in order to create a unified experience in all communication channels, the website, social media & business cards.</p>
+    <div class="sm:pr-4">
+      <p>I started constructing the pillars on top of which the whole website was built, the sitemap & the design system. My ultimate goal was to create a design that would provide a clear navigation through the website for the potential customers. The palette of colors was inspired from the buildings & nature that surrounds Mesogheo. In this phase, a logo redesign was deemed as necessary, in order to create a unified experience in all communication channels, the website, social media & business cards.</p>
+    </div>
   </div>
-</div>
 
-<div class="flex items-center mb-4 justify-items-center sm:mb-8 lg:mb-12">
-  <figure class="w-full">
-    <img src={Sitemap} alt="Sitemap" class="w-full">
-    <figcaption class="text-center text-xxs lg:text-sm 2xl:text-base lg:mt-1">sitemap</figcaption>
-  </figure>
+  <div class="flex items-center col-span-2 mb-4 sm:mt-8 lg:col-span-1 justify-items-center sm:mb-8 lg:mb-12">
+    <figure class="w-full">
+      <img src={Sitemap} alt="Sitemap" class="w-full">
+      <figcaption class="text-center text-xxs lg:text-sm 2xl:text-base lg:mt-1">sitemap</figcaption>
+    </figure>
+  </div>
 </div>
 
 <div class="flex items-center mb-4 justify-items-center lg:mb-8">
@@ -125,4 +117,4 @@
   </figure>
 </div>
 
-<NextProjects bind:mesogheo bind:rd bind:eat bind:tat currentProject='mesogheo' />
+<NextProjects bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat currentProject='mesogheo' />

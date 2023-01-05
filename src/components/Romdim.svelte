@@ -1,5 +1,8 @@
 <script>
   import NextProjects from './NextProjects.svelte';
+  export let cognizantPharma2: boolean = false;
+  export let cognizantECommerce: boolean = false;
+  export let cognizantPharma1: boolean = false;
   export let mesogheo: boolean = false;
   export let rd: boolean = false;
   export let eat: boolean = false;
@@ -144,4 +147,4 @@
   </div>
 </div>
 
-<NextProjects bind:mesogheo bind:rd bind:eat bind:tat currentProject='rd' />
+<NextProjects bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat currentProject='rd' />
