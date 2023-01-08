@@ -14,10 +14,11 @@
 
 <div class="w-full mb-4 text-base sm:w-4/5 xl:w-1/2 4xl:w-2/5 4xl:mb-12 sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">
   <p>Research Visualisation Tool</p>
+  <p class="mt-6 text-xs 4xl:mt-8 sm:text-sm lg:text-base">* Happy to share the full case study in a call!</p>
 </div>
 
 <div class="grid grid-cols-2 mb-8 text-sm sm:relative sm:text-base lg:text-xl 2xl:text-2xl 4xl:text-3xl">
-  <p class="col-span-2 mb-8 lg:col-span-1 sm:mt-8 4xl:mb-2">As part of the assigned Cognizant team to this client I designed an internal data visualisation tool that empowers scientists to take decisions for clinical trials based on data models for a multinational pharmaceutical & healthcare corporation.</p>
+  <p class="col-span-2 mb-8 lg:col-span-1 sm:mt-4 4xl:mb-2">As part of the assigned Cognizant team to this client I designed an internal data visualisation tool that empowers scientists to take decisions for clinical trials based on data models for a multinational pharmaceutical & healthcare corporation.</p>
   <span class="col-span-2 lg:col-span-1"></span>
   <div class="col-span-2 lg:col-span-1">
     <p class="text-efi">Client</p>
