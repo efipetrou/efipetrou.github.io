@@ -134,33 +134,24 @@
 </div>
 
 <div class="flex flex-col space-y-4 lg:col-span-6 lg:justify-between xl:justify-around sm:space-y-8 xl:mb-8" class:hidden={projectAfter1}>
-	<label class="cursor-pointer aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
-		<div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
-			<CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
-		</div>
-		<div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-pharma"></div>
-		<div class="absolute top-0 flex w-1/2 h-full left-1/2">
-			<img src={Pharma2} class="w-5/6 m-auto" alt="img" />
+	<label class="cursor-pointer bg-cognizant aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
+		<div class="absolute flex flex-col items-center w-full h-full space-y-6 lg:-space-y-4 place-content-center">
+			<CognizantLogo class="w-1/2 lg:h-2/5"/>
+			<p class="text-xl text-cognizant2">Digital Innovation Ecosystem</p>
 		</div>
 		<input type="checkbox" bind:checked={cognizantPharma2} class="hidden">
 	</label>
-	<label class="cursor-pointer aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
-		<div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
-			<CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
-		</div>
-		<div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-ecommerce"></div>
-		<div class="absolute top-0 flex w-1/2 h-full left-1/2">
-			<img src={ECommerce} class="w-5/6 m-auto" alt="img" />
+	<label class="cursor-pointer bg-cognizant aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
+		<div class="absolute flex flex-col items-center w-full h-full space-y-6 lg:-space-y-4 place-content-center">
+			<CognizantLogo class="w-1/2 lg:h-2/5"/>
+			<p class="text-xl text-cognizant2">E-commerce Platform</p>
 		</div>
 		<input type="checkbox" bind:checked={cognizantECommerce} class="hidden">
 	</label>
-	<label class="cursor-pointer aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
-		<div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
-			<CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
-		</div>
-		<div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-pharma"></div>
-		<div class="absolute top-0 flex w-1/2 h-full left-1/2">
-			<img src={Pharma1} class="w-5/6 m-auto" alt="img" />
+	<label class="cursor-pointer bg-cognizant aspect-w-16 aspect-h-9" on:click={() => scrollToTop()}>
+		<div class="absolute flex flex-col items-center w-full h-full space-y-6 lg:-space-y-4 place-content-center">
+			<CognizantLogo class="w-1/2 lg:h-2/5"/>
+			<p class="text-xl text-cognizant2">Research Visualisation Tool</p>
 		</div>
 		<input type="checkbox" bind:checked={cognizantPharma1} class="hidden">
 	</label>

@@ -1,7 +1,7 @@
 <script>
   import { scrollToTop } from "svelte-scrollto";
 
-  import CognizantLogo from '../images/cognizant/Logo.svelte';
+  import CognizantLogo from '../images/cognizant/cognizant.svelte';
   import MesogheoLogo from '../images/mesogheo/Logo.svelte';
   import RomdimLogo from '../images/romdim/Logo.svelte';
   import EatLogo from '../images/eat/LogoBig.svelte';
@@ -114,33 +114,24 @@
 <div class="w-full m-auto sm:flex sm:flex-wrap">
   {#each sortedArray as value}
     {#if value === 0}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto" on:click={openCognizantPharma2}>
-        <div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
-          <CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
-        </div>
-        <div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-pharma"></div>
-        <div class="absolute top-0 flex w-1/2 h-full left-1/2">
-          <img src={Pharma2} class="w-5/6 m-auto" alt="img" />
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto bg-cognizant" on:click={openCognizantPharma2}>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
+          <CognizantLogo class="w-1/2" />
+          <p class="text-xl text-cognizant2">Digital Innovation Ecosystem</p>
         </div>
       </div>
     {:else if value === 1}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto" on:click={openCognizantECommerce}>
-        <div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
-          <CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
-        </div>
-        <div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-ecommerce"></div>
-        <div class="absolute top-0 flex w-1/2 h-full left-1/2">
-          <img src={ECommerce} class="w-5/6 m-auto" alt="img" />
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto bg-cognizant" on:click={openCognizantECommerce}>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
+          <CognizantLogo class="w-1/2" />
+          <p class="text-xl text-cognizant2">E-commerce Platform</p>
         </div>
       </div>
     {:else if value === 2}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto" on:click={openCognizantPharma1}>
-        <div class="absolute top-0 left-0 flex w-1/2 h-full bg-black">
-          <CognizantLogo class="w-5/6 m-auto text-cognizant opacity-30" />
-        </div>
-        <div class="absolute top-0 flex w-1/2 h-full left-1/2 bg-cognizant-pharma"></div>
-        <div class="absolute top-0 flex w-1/2 h-full left-1/2">
-          <img src={Pharma1} class="w-5/6 m-auto" alt="img" />
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto bg-cognizant" on:click={openCognizantPharma1}>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-4 lg:space-y-6 place-content-center">
+          <CognizantLogo class="w-1/2" />
+          <p class="text-md sm:text-lg lg:text-xl text-cognizant2">Research Visualisation Tool</p>
         </div>
       </div>
     {:else if value === 3}

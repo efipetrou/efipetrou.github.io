@@ -10,7 +10,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'cognizant': '#F9F8F7',
+        'cognizant': '#000048',
+        'cognizant2': '#06C7CC',
         'cognizant-pharma': '#F3F0FF',
         'cognizant-ecommerce': '#EFEDEA',
         'mesogheo22': '#39412F',
