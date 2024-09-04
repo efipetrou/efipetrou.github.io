@@ -199,9 +199,9 @@
 		</label>
 		<label class="text-white bg-black cursor-pointer aspect-h-9 aspect-w-16" on:click={() => scrollToTop()}  on:keydown={() => scrollToTop()}>
 			<input type="checkbox" bind:checked={film} class="hidden">
-			<div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
-				<h3 class="text-4xl">IN THE FOOTSTEPS OF PAN</h3>
-				<p>Film</p>
+			<div class="absolute flex flex-col items-center w-full h-full space-y-2 lg:space-y-6 place-content-center">
+				<h3 class="lg:text-4xl">IN THE FOOTSTEPS OF PAN</h3>
+				<p class="text-xs lg:text-base">Film</p>
 			</div>
 		</label>
 		<div class="w-full h-1 lg:hidden"></div>

@@ -193,9 +193,9 @@
       </div>
     {:else}
       <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-black text-white" on:click={openFilm} on:keydown={openFilm}>
-        <div class="absolute flex flex-col items-center w-full h-full space-y-4 lg:space-y-6 place-content-center">
-          <h3 class="text-4xl">IN THE FOOTSTEPS OF PAN</h3>
-          <p>Film</p>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-2 lg:space-y-6 place-content-center">
+          <h3 class="lg:text-4xl">IN THE FOOTSTEPS OF PAN</h3>
+				  <p class="text-xs lg:text-base">Film</p>
         </div>
       </div>
     {/if}
