@@ -9,7 +9,13 @@
 	import Pharma2 from '../images/cognizant/Pharma2.png';
 	import ECommerce from '../images/cognizant/ECommerce.png';
 	import Pharma1 from '../images/cognizant/Pharma1.png';
+	import SanofiLogo from '../images/cognizant/Sanofi.svelte';
+	import LelyLogo from '../images/cognizant/Lely.svelte';
+	import PGBLogo from '../images/cognizant/PGB.svelte';
+	import MediahuisLogo from '../images/mediahuis/Logo.svelte';
 
+  export let mediahuis: boolean = false;
+  export let pgb: boolean = false;
   export let cognizantPharma2: boolean = false;
   export let cognizantECommerce: boolean = false;
   export let cognizantPharma1: boolean = false;
@@ -17,16 +23,20 @@
   export let rd: boolean = false;
   export let eat: boolean = false;
   export let tat: boolean = false;
+  export let film: boolean = false;
 
   export let currentProject: string = 'cognizantPharma2';
   const projectList: string[] = [
+    'mediahuis',
+    'pgb',
     'cognizantPharma2',
     'cognizantECommerce',
     'cognizantPharma1',
     'mesogheo',
     'rd',
     'eat',
-    'tat'
+    'tat',
+    'film'
   ];
   let current: number = projectList.indexOf(currentProject);
   const previous: number = current === 0 ? projectList.length-1 : current-1;
@@ -40,8 +50,16 @@
   }
 
   const close = (): void => {
-    cognizantPharma2 = cognizantECommerce = cognizantPharma1 = mesogheo = rd = eat = tat = false;
+    mediahuis = pgb = cognizantPharma2 = cognizantECommerce = cognizantPharma1 = mesogheo = rd = eat = tat = false;
     scrollToTop({duration: 0});
+  };
+  const openMediahuis = (): void => {
+    close();
+		setTimeout(() => mediahuis = true, 100);
+  };
+  const openPGB = (): void => {
+    close();
+		setTimeout(() => pgb = true, 100);
   };
   const openCognizantPharma2 = (): void => {
     close();
@@ -71,22 +89,32 @@
     close();
     setTimeout(() => tat = true, 100);
   };
+  const openFilm = (): void => {
+    close();
+    setTimeout(() => film = true, 100);
+  };
 
   const click = (num: number): void => {
     if (num === 0) {
-      openCognizantPharma2();
+      openMediahuis();
     } else if (num === 1) {
-      openCognizantECommerce();
+      openPGB();
     } else if (num === 2) {
-      openCognizantPharma1();
+      openCognizantPharma2();
     } else if (num === 3) {
-      openMesogheo();
+      openCognizantECommerce();
     } else if (num === 4) {
+      openCognizantPharma1();
+    } else if (num === 5) {
+      openMesogheo();
+    } else if (num === 6) {
       openRd();
-    } else if (numm === 5) {
+    } else if (num === 7) {
       openEat();
-    } else {
+    } else if (num === 8){
       openTat();
+    } else {
+      openFilm();
     }
   };
 
@@ -114,41 +142,61 @@
 <div class="w-full m-auto sm:flex sm:flex-wrap">
   {#each sortedArray as value}
     {#if value === 0}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto bg-cognizant" on:click={openCognizantPharma2}>
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-mediahuis" on:click={openMediahuis} on:keydown={openMediahuis}>
         <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
-          <CognizantLogo class="w-1/2" />
-          <p class="text-xl text-cognizant2">Digital Innovation Ecosystem</p>
+          <MediahuisLogo class="w-1/2" />
         </div>
       </div>
     {:else if value === 1}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto bg-cognizant" on:click={openCognizantECommerce}>
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-pgb" on:click={openPGB} on:keydown={openPGB}>
         <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
-          <CognizantLogo class="w-1/2" />
-          <p class="text-xl text-cognizant2">E-commerce Platform</p>
+          <PGBLogo class="w-1/2" />
+          <!-- <p class="text-xl text-cognizant2">Digital Innovation Ecosystem</p> -->
         </div>
       </div>
     {:else if value === 2}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto bg-cognizant" on:click={openCognizantPharma1}>
-        <div class="absolute flex flex-col items-center w-full h-full space-y-4 lg:space-y-6 place-content-center">
-          <CognizantLogo class="w-1/2" />
-          <p class="text-md sm:text-lg lg:text-xl text-cognizant2">Research Visualisation Tool</p>
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-sanofi" on:click={openCognizantPharma2} on:keydown={openCognizantPharma2}>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
+          <SanofiLogo class="w-1/2" />
+          <p class="text-xl text-white">Digital Innovation Ecosystem</p>
         </div>
       </div>
     {:else if value === 3}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 bg-mesogheo22 cursor-pointer mt-8 flex-auto" on:click={openMesogheo}>
-        <MesogheoLogo class="w-1/2 m-auto text-mesogheo92" />
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-lely" on:click={openCognizantECommerce} on:keydown={openCognizantECommerce}>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
+          <LelyLogo class="w-1/2" />
+          <!-- <p class="text-xl text-cognizant2">E-commerce Platform</p> -->
+        </div>
       </div>
     {:else if value === 4}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 border border-black cursor-pointer mt-8 flex-auto" on:click={openRd}>
-        <RomdimLogo class="w-1/4 m-auto" />
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-sanofi" on:click={openCognizantPharma1} on:keydown={openCognizantPharma1}>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-4 lg:space-y-6 place-content-center">
+          <SanofiLogo class="w-1/2" />
+          <p class="text-white text-md sm:text-lg lg:text-xl">Research Visualisation Tool</p>
+        </div>
       </div>
     {:else if value === 5}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 flex-auto" on:click={openEat}>
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 bg-mesogheo22 cursor-pointer mt-8" on:click={openMesogheo} on:keydown={openMesogheo}>
+        <MesogheoLogo class="w-1/2 m-auto text-mesogheo92" />
+      </div>
+    {:else if value === 6}
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 border border-black cursor-pointer mt-8" on:click={openRd} on:keydown={openRd}>
+        <RomdimLogo class="w-1/4 m-auto" />
+      </div>
+    {:else if value === 7}
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8" on:click={openEat} on:keydown={openEat}>
         <EatLogo class="w-full m-auto" />
       </div>
-    {:else}
-      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-tat flex-auto" on:click={openTat}>
+    {:else if value === 8}
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-tat" on:click={openTat} on:keydown={openTat}>
         <TatLogo class="w-1/2 m-auto" />
+      </div>
+    {:else}
+      <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-black text-white" on:click={openFilm} on:keydown={openFilm}>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-4 lg:space-y-6 place-content-center">
+          <h3 class="text-4xl">IN THE FOOTSTEPS OF PAN</h3>
+          <p>Film</p>
+        </div>
       </div>
     {/if}
   {/each}

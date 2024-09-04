@@ -10,7 +10,7 @@
   const toggleHovering = () => hoverings = toggleArrayBool(hoverings, number);
 </script>
 
-<li class="flex my-4 4xl:my-10 cursor-pointer" on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering}>
+<li class="flex my-4 cursor-pointer 4xl:my-10" on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering} on:focus={toggleHovering}>
   <p class="flex-shrink-0 w-6" class:text-hover={hoverings[number-1]}>{number}</p>
   <p>{@html description}</p>
 </li>

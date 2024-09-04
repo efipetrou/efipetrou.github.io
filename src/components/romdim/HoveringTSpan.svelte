@@ -12,4 +12,4 @@
   const toggleHovering = () => hoverings = toggleArrayBool(hoverings, number);
 </script>
 
-<tspan x={coordinates.x} y={coordinates.y} class:efi={hoverings[number-1]} on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering}>{number}</tspan>
+<tspan x={coordinates.x} y={coordinates.y} class:efi={hoverings[number-1]} on:touchend|preventDefault={toggleHovering} on:mouseover={toggleHovering} on:focus={toggleHovering}>{number}</tspan>

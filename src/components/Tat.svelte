@@ -1,5 +1,7 @@
 <script>
   import NextProjects from './NextProjects.svelte';
+  export let mediahuis: boolean = false;
+  export let pgb: boolean = false;
   export let cognizantPharma2: boolean = false;
   export let cognizantECommerce: boolean = false;
   export let cognizantPharma1: boolean = false;
@@ -7,6 +9,7 @@
   export let rd: boolean = false;
   export let eat: boolean = false;
   export let tat: boolean = false;
+  export let film: boolean = false;
 
   import ProjectBlock from './ProjectBlock.svelte';
 
@@ -44,14 +47,14 @@
 
 <!-- <svelte:window bind:innerHeight={height} bind:scrollY={y}/> -->
 
-<div class="w-full sm:w-4/5 xl:w-1/2 4xl:w-2/5 mb-4 4xl:mb-12">
-  <Logo class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 2xl:w-24 2xl:h-24 4xl:w-32 4xl:h-32 mt-2 mr-2 float-left bg-tat" />
+<div class="w-full mb-4 sm:w-4/5 xl:w-1/2 4xl:w-2/5 4xl:mb-12">
+  <Logo class="float-left w-10 h-10 mt-2 mr-2 sm:w-12 sm:h-12 lg:w-14 lg:h-14 2xl:w-24 2xl:h-24 4xl:w-32 4xl:h-32 bg-tat" />
   <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">is a to-do list web app with an unvarnished non-intrusive design, has a modular layout without infinite categories, just 3 goals per day to achieve & 2 lists, to-do & notes.</p>
 </div>
 
 <!-- <div class="lg:relative" style="{ypx}"> -->
-  <!-- <div class="hidden lg:block rounded-full h-5 w-5 2xl:h-8 2xl:w-8 sticky top-0 left-1/2 transition-transform transition-duration-75 transform -translate-x-1/2-1 translate-y-8 bg-efi z-10" data-scroll data-scroll-sticky> -->
-  <!-- <div class="hidden lg:block rounded-full h-5 w-5 2xl:h-8 2xl:w-8 sticky top-0 left-1/2 transition-transform transition-duration-75 transform -translate-x-1/2-1 translate-y-8 bg-efi z-10">
+  <!-- <div class="sticky top-0 z-10 hidden w-5 h-5 transition-transform transform translate-y-8 rounded-full lg:block 2xl:h-8 2xl:w-8 left-1/2 transition-duration-75 -translate-x-1/2-1 bg-efi" data-scroll data-scroll-sticky> -->
+  <!-- <div class="sticky top-0 z-10 hidden w-5 h-5 transition-transform transform translate-y-8 rounded-full lg:block 2xl:h-8 2xl:w-8 left-1/2 transition-duration-75 -translate-x-1/2-1 bg-efi">
   </div> -->
 
 <ProjectBlock first={true}>
@@ -63,7 +66,7 @@
   </span>
   <div slot="images" class="sm:w-1/2 sm:pt-8 sm:px-8 4xl:pb-24">
     <DesignSystem class="w-full" />
-    <Components class="mb-4 w-full" />
+    <Components class="w-full mb-4" />
   </div>
 </ProjectBlock>
 
@@ -72,7 +75,7 @@
   <span slot="text">
     <p>Google Keep numbers among the great list of to-do apps, with a great yet simple design & strong features. Nevertheless, who wishes to share their most personal to-dos & notes with Google?</p>
   </span>
-  <div slot="images" class="mb-4 flex flex-wrap w-full sm:w-1/2 items-center sm:px-8 sm:pb-4 4xl:pb-24">
+  <div slot="images" class="flex flex-wrap items-center w-full mb-4 sm:w-1/2 sm:px-8 sm:pb-4 4xl:pb-24">
     <div class="w-1/2">
       <img src={Keep1} alt="Competitor - Google Keep Menu" class="object-contain">
     </div>
@@ -95,4 +98,4 @@
 </ProjectBlock>
 <!-- </div> -->
 
-<NextProjects bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat currentProject='tat' />
+<NextProjects bind:mediahuis bind:pgb bind:cognizantPharma2 bind:cognizantECommerce bind:cognizantPharma1 bind:mesogheo bind:rd bind:eat bind:tat bind:film currentProject='tat' />
