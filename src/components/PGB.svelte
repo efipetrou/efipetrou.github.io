@@ -23,15 +23,15 @@
   <span class="col-span-2 lg:col-span-1"></span>
   <div class="col-span-2 mb-4 sm:mx-2 lg:col-span-1 lg:mb-0">
     <p class="text-efi">Client</p>
-    <p>Pension fund</p>
+    <p>PGB Pensioenfonds</p>
     <p class="text-efi">Employer</p>
     <p>Mirabeau - a Cognizant Digital Business</p>
     <p class="text-efi">Role</p>
     <p>Product / Visual Designer</p>
     <p class="text-efi">Key Activities</p>
     <p>High Fidelity Screens, Update Design System, Present to Stakeholders & Development Team</p>
+    <p class="mt-6 text-xs 4xl:mt-8 sm:text-sm lg:text-base">* Happy to share the full case study in a call!</p>
   </div>
-  <!-- TODO: Add pic -->
   <div class="col-span-2 sm:mx-2 lg:col-span-1 bg-pgb-blurred">
     <figure class="w-1/2 m-auto my-16">
       <img src={PGBImage} alt="Pension fund" class="w-full">

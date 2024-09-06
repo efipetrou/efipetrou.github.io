@@ -24,13 +24,14 @@
   <span class="col-span-2 lg:col-span-1"></span>
   <div class="col-span-2 mb-4 lg:col-span-1 sm:mx-2 lg:mb-0">
     <p class="text-efi">Client</p>
-    <p>Dutch agricultural machine manufacturer</p>
+    <p>Lely</p>
     <p class="text-efi">Employer</p>
     <p>Mirabeau - a Cognizant Digital Business</p>
     <p class="text-efi">Role</p>
     <p>Product / Visual Designer</p>
     <p class="text-efi">Key Activities</p>
     <p>Workshops, Web Responsive Screens, Design Optimisations, Handover to Developers</p>
+    <p class="mt-6 text-xs 4xl:mt-8 sm:text-sm lg:text-base">* Happy to share the full case study in a call!</p>
   </div>
   <div class="col-span-2 lg:col-span-1 bg-cognizant-ecommerce sm:mx-2">
     <figure class="w-1/2 m-auto my-16">

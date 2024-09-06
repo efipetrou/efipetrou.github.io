@@ -26,7 +26,7 @@
 
 <div class="w-full mb-4 sm:w-4/5 xl:w-1/2 4xl:w-2/5 4xl:mb-12">
   <Logo class="float-left w-10 h-10 mt-2 mr-2 sm:w-12 sm:h-12 lg:w-14 lg:h-14 2xl:w-24 2xl:h-24 4xl:w-32 4xl:h-32" />
-  <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">At Mediahuis, responsibilities include maintaining design systems for Telegraaf.nl and the Subscription System, enhancing them in collaboration with CRO and marketing teams. Key tasks also involve designing scalable email templates, providing UX/UI feedback for Dumpert.nl, and working with Chameleon, our white-label system. Additionally, I optimise Figma workflows, improve  design processes, and mentor design interns.</p>
+  <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">Currently working as a Product Designer at Mediahuis, previously serving as Design System Manager, with responsibilities spanning design ops.</p>
 </div>
 
 <ProjectBlock moveUp={true}>
@@ -42,7 +42,7 @@
 <ProjectBlock moveUp={true}>
   <span slot="title" class="sm:mt-8">Subscription Shop</span>
   <span slot="text">
-    <p class="mb-4">The "Subscription Shop" project involved collaborating with a multidisciplinary team of developers, CRO specialists, a visual designer, and key stakeholders to update the live product for Telegraaf and Regional Titles. The project introduced new grids for all devices while simultaneously updating the design system to ensure consistency and scalability across brands.</p>
+    <p class="mb-4">The project involved collaborating with a multidisciplinary team of developers, CRO specialists, a visual designer, and key stakeholders to update the live product for Telegraaf and Regional Titles. The project introduced new grids for all devices while simultaneously updating the design system to ensure consistency and scalability across brands.</p>
   </span>
   <div slot="images" class="w-full mb-4 sm:w-1/2 sm:pt-8 sm:px-8 4xl:pb-24">
     <img src={SubscriptionShop} alt="Telegraaf's Design System" >
@@ -62,7 +62,7 @@
 <ProjectBlock moveUp={true}>
   <span slot="title" class="sm:mt-8">Podcasts</span>
   <span slot="text">
-    <p class="mb-4">For this project, the design team worked closely with the editorial team and a brand marketer to create fresh thumbnails for Telegraaf's podcast series. Research, co-design ideation sessions, and moodboards guided the process, leading to multiple design iterations. The final thumbnails successfully reflected the brand's identity while capturing the distinct vision of each podcast, satisfying both the brand and stakeholder requirements.</p>
+    <p class="mb-4">Partnering with the editorial team and a brand marketer, the design team aimed to to create fresh thumbnails for Telegraaf's podcast series. Research, co-design ideation sessions, and moodboards guided the process, leading to multiple design iterations. The final thumbnails successfully reflected the brand's identity while capturing the distinct vision of each podcast, satisfying both the brand and stakeholders' expectations.</p>
   </span>
   <div slot="images" class="w-full mb-4 sm:w-1/2 sm:pt-8 sm:px-8 4xl:pb-24">
     <img src={Podcasts} alt="Telegraaf's Design System" >
@@ -72,7 +72,7 @@
 <ProjectBlock moveUp={true}>
   <span slot="title" class="sm:mt-8">Marketing Emails</span>
   <span slot="text">
-    <p class="mb-4">This project focused on creating scalable and reusable email templates for various Mediahuis brands. Through research, design iterations visual and feasibility check-ins, the design system was updated to accommodate these templates. The result was a set of versatile email templates with variants incorporated into Telegraaf's design system, ensuring consistency across the brand's communications.</p>
+    <p class="mb-4">The goal of this project was to develop scalable and reusable email templates for multiple Mediahuis brands. By conducting thorough research and iterating on designs with visual and feasibility check-ins, the design system was updated to accommodate these templates. This resulted in a flexible set of email templates, with variants integrated into Telegraaf’s design system, ensuring brand consistency across all communications.</p>
   </span>
   <div slot="images" class="w-full mb-4 sm:w-1/2 sm:pt-8 sm:px-8 4xl:pb-24">
     <img src={MarketingEmails} alt="Emails & Campaigns" >

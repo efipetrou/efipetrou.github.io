@@ -1,7 +1,7 @@
 <script>
   import { scrollToTop } from "svelte-scrollto";
 
-  import CognizantLogo from '../images/cognizant/cognizant.svelte';
+	import CognizantSmallLogo from '../images/cognizant/LogoSmall.svelte';
   import MesogheoLogo from '../images/mesogheo/Logo.svelte';
   import RomdimLogo from '../images/romdim/Logo.svelte';
   import EatLogo from '../images/eat/LogoBig.svelte';
@@ -151,6 +151,7 @@
       <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-pgb" on:click={openPGB} on:keydown={openPGB}>
         <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
           <PGBLogo class="w-1/2" />
+				  <CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
           <!-- <p class="text-xl text-cognizant2">Digital Innovation Ecosystem</p> -->
         </div>
       </div>
@@ -158,13 +159,15 @@
       <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-sanofi" on:click={openCognizantPharma2} on:keydown={openCognizantPharma2}>
         <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
           <SanofiLogo class="w-1/2" />
-          <p class="text-xl text-white">Digital Innovation Ecosystem</p>
+          <p class="text-white text-md sm:text-lg lg:text-xl">Digital Innovation Ecosystem</p>
+				  <CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
         </div>
       </div>
     {:else if value === 3}
       <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-lely" on:click={openCognizantECommerce} on:keydown={openCognizantECommerce}>
         <div class="absolute flex flex-col items-center w-full h-full space-y-6 place-content-center">
           <LelyLogo class="w-1/2" />
+				  <CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
           <!-- <p class="text-xl text-cognizant2">E-commerce Platform</p> -->
         </div>
       </div>
@@ -173,6 +176,7 @@
         <div class="absolute flex flex-col items-center w-full h-full space-y-4 lg:space-y-6 place-content-center">
           <SanofiLogo class="w-1/2" />
           <p class="text-white text-md sm:text-lg lg:text-xl">Research Visualisation Tool</p>
+				  <CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
         </div>
       </div>
     {:else if value === 5}
@@ -193,9 +197,9 @@
       </div>
     {:else}
       <div class="aspect-w-16 aspect-h-9 sm:aspect-h-4.5 w-full sm:w-1/2-with-mx-2 sm:mx-2 cursor-pointer mt-8 bg-black text-white" on:click={openFilm} on:keydown={openFilm}>
-        <div class="absolute flex flex-col items-center w-full h-full space-y-2 lg:space-y-6 place-content-center">
-          <h3 class="lg:text-4xl">IN THE FOOTSTEPS OF PAN</h3>
-				  <p class="text-xs lg:text-base">Film</p>
+        <div class="absolute flex flex-col items-center w-full h-full space-y-2 xl:space-y-6 place-content-center">
+          <h3 class="xl:text-4xl">IN THE FOOTSTEPS OF PAN</h3>
+				  <p class="text-xs xl:text-base">Film</p>
         </div>
       </div>
     {/if}

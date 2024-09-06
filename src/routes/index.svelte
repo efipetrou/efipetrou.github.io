@@ -5,7 +5,7 @@
   import { scrollToTop } from "svelte-scrollto";
 
 	import Logo from '../images/Logo.svelte';
-	import CognizantLogo from '../images/cognizant/Logo.svelte';
+	import CognizantSmallLogo from '../images/cognizant/LogoSmall.svelte';
 	import MesogheoLogo from '../images/mesogheo/Logo.svelte';
 	import RomdimLogo from '../images/romdim/Logo.svelte';
 	import EatLogo from '../images/eat/LogoBig.svelte';
@@ -130,7 +130,7 @@
 
 <main class="h-screen p-4 pt-0 font-sans bg-white sm:px-8 lg:py-8 lg:grid lg:grid-cols-12 lg:gap-2">
 	<div class="lg:col-span-6">
-		<div class="z-50 flex items-center w-screen h-16 -mx-4 space-x-4 text-base bg-white border-black lg:w-1/2 lg:z-auto lg:border-b-0 sm:-mx-8 sm:px-4 lg:fixed lg:top-4 sm:text-lg 2xl:text-3xl 4xl:text-4xl" class:fixed={projectAfter1} class:border-b={projectAfter1}>
+		<div class="fixed z-50 flex items-center w-screen h-16 -mx-4 space-x-4 text-base border-black lg:w-1/2 lg:z-auto lg:border-b-0 sm:-mx-8 sm:px-4 lg:top-4 sm:text-lg 2xl:text-3xl 4xl:text-4xl">
 			<div class="fixed w-screen h-16 lg:hidden" class:hidden={!projectAfter1} on:click={close} on:keydown={close}></div>
 			<a href="/" alt="Home"><Logo class="w-12 h-12 sm:w-14 sm:h-14 2xl:w-20 2xl:h-20" /></a>
 			<a href="https://www.linkedin.com/in/efipetrou" target="_blank" class:text-hover={linkedInHover} on:mouseenter={linkedInHoverOn} on:mouseleave={linkedInHoverOff} on:touchstart={toggleLinkedInFor10}>LINKEDIN</a>
@@ -138,7 +138,7 @@
 			<label class="cursor-pointer hover:text-hover"><input type="checkbox" bind:checked={film} class="hidden">FILM</label>
 		</div>
 
-		<div class="mt-2 mb-4 sm:mt-4 lg:mb-0 lg:block lg:fixed lg:bottom-8" class:hidden={projectAfter1}>
+		<div class="pt-16 mt-2 mb-4 lg:pt-0 sm:mt-4 lg:mb-0 lg:block lg:fixed lg:bottom-8" class:hidden={projectAfter1}>
 			<h4 class="text-sm font-bold sm:text-base 2xl:text-2xl 4xl:text-3xl 2xl:mb-1">Product Designer</h4>
 			<h1 class="text-xl sm:text-2xl 2xl:text-4xl 4xl:text-5xl 2xl:mb-3 efi">EFI PETROU</h1>
 			<p class="text-base lg:w-5/12 3xl:w-1/4 sm:text-lg 2xl:text-3xl 4xl:text-4xl">Born to be creative and honed into a critical-thinking perfectionist, I bring a well-rounded background that fuels my inspiration. I firmly believe that teams create optimal solutions, and I excel in collaboration while also taking initiative. With a keen ability to empathise with people, I am exploring the dynamic field of Design in the Netherlands.</p>
@@ -154,30 +154,34 @@
 			<input type="checkbox" bind:checked={mediahuis} class="hidden">
 		</label>
 		<label class="cursor-pointer aspect-h-9 aspect-w-16 bg-pgb" on:click={() => scrollToTop()}  on:keydown={() => scrollToTop()}>
-			<div class="absolute flex flex-col items-center w-full h-full space-y-6 lg:-space-y-4 place-content-center">
+			<div class="absolute flex flex-col items-center w-full h-full space-y-2 lg:-space-y-4 place-content-center">
 				<PGBLogo class="w-2/5 lg:h-2/5"/>
+				<CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
 				<!-- <p class="text-xl text-white"></p> -->
 			</div>
 			<input type="checkbox" bind:checked={pgb} class="hidden">
 		</label>
 		<label class="cursor-pointer aspect-h-9 aspect-w-16 bg-sanofi" on:click={() => scrollToTop()}  on:keydown={() => scrollToTop()}>
-			<div class="absolute flex flex-col items-center w-full h-full space-y-6 lg:-space-y-4 place-content-center">
+			<div class="absolute flex flex-col items-center w-full h-full space-y-2 lg:-space-y-4 place-content-center">
 				<SanofiLogo class="w-2/5 lg:h-2/5"/>
-				<p class="text-xl text-white">Digital Innovation Ecosystem</p>
+				<p class="text-xs text-white lg:text-base">Digital Innovation Ecosystem</p>
+				<CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
 			</div>
 			<input type="checkbox" bind:checked={cognizantPharma2} class="hidden">
 		</label>
 		<label class="cursor-pointer aspect-h-9 aspect-w-16 bg-lely" on:click={() => scrollToTop()}  on:keydown={() => scrollToTop()}>
-			<div class="absolute flex flex-col items-center w-full h-full space-y-6 lg:-space-y-4 place-content-center">
+			<div class="absolute flex flex-col items-center w-full h-full space-y-2 lg:-space-y-4 place-content-center">
 				<LelyLogo class="w-1/2 lg:h-2/5"/>
+				<CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
 				<!-- <p class="text-xl text-cognizant2">E-commerce Platform</p> -->
 			</div>
 			<input type="checkbox" bind:checked={cognizantECommerce} class="hidden">
 		</label>
 		<label class="cursor-pointer aspect-h-9 aspect-w-16 bg-sanofi" on:click={() => scrollToTop()}  on:keydown={() => scrollToTop()}>
-			<div class="absolute flex flex-col items-center w-full h-full space-y-6 lg:-space-y-4 place-content-center">
+			<div class="absolute flex flex-col items-center w-full h-full space-y-2 lg:-space-y-4 place-content-center">
 				<SanofiLogo class="w-2/5 lg:h-2/5"/>
-				<p class="text-xl text-white">Research Visualisation Tool</p>
+				<p  class="text-xs text-white lg:text-base">Research Visualisation Tool</p>
+				<CognizantSmallLogo class="absolute bottom-0 w-1/12 sm:bottom-2 md:bottom-4 right-2 lg:right-4 lg:w-auto"/>
 			</div>
 			<input type="checkbox" bind:checked={cognizantPharma1} class="hidden">
 		</label>
@@ -209,7 +213,7 @@
 
 	<div class="absolute top-0 left-0 hidden w-screen lg:left-1/12 lg:w-11/12" class:fly={project}>
 		<div class="hidden lg:block absolute top-0 left-0 w-1/12+2 h-full transform -translate-x-full" on:click={close} on:keydown={close}></div>
-		<div class:border-t={project && !projectAfter1} class="w-full p-4 mt-16 bg-white border-black lg:mt-0 lg:border-t-0 sm:px-8 lg:border-l lg:min-h-screen">
+		<div class="w-full p-4 mt-16 bg-white border-black lg:mt-0 lg:border-t-0 sm:px-8 lg:border-l lg:min-h-screen">
 			{#if mediahuis}
 				<Mediahuis
 					bind:mediahuis
