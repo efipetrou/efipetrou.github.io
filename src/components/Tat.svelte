@@ -57,7 +57,7 @@
   <!-- <div class="sticky top-0 z-10 hidden w-5 h-5 transition-transform transform translate-y-8 rounded-full lg:block 2xl:h-8 2xl:w-8 left-1/2 transition-duration-75 -translate-x-1/2-1 bg-efi">
   </div> -->
 
-<ProjectBlock first={true}>
+<ProjectBlock moveUp={true}>
   <span slot="title" class="sm:mt-8">Concept</span>
   <span slot="text">
     <p class="mb-4">It came out as a necessity when I was confronted with all the small chores needed to be done in order to turn a new house into a home. After a lot of unsuccessful trials of analog and digital overcomplicated tools and soon-to-be-lost post-its, I came up with the bare minimum viable product that I could live with, TAT, after the German word for act.</p>

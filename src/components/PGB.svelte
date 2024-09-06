@@ -25,7 +25,7 @@
     <p class="text-efi">Client</p>
     <p>Pension fund</p>
     <p class="text-efi">Employer</p>
-    <p>Mirabeau / Cognizant</p>
+    <p>Mirabeau - a Cognizant Digital Business</p>
     <p class="text-efi">Role</p>
     <p>Product / Visual Designer</p>
     <p class="text-efi">Key Activities</p>

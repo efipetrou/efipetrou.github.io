@@ -34,7 +34,7 @@
   <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">web app has food as its protagonist & 3 primary functions: to gather recipes, organise a weekly planner & write down a grocery list, using old-fashioned recipe books as an aesthetic guide.</p>
 </div>
 
-<ProjectBlock first={true}>
+<ProjectBlock moveUp={true}>
   <span slot="title" class="sm:mt-8">UX Research</span>
   <span slot="text">
     <p>After conducting a small scale UX Research with a target group of 5 individuals, aged 25-35, which is usually when people move out of their parental home & create their own, I figured out that one of the main pain points for everyone was: "What am I going to cook for tomorrow?"</p>
