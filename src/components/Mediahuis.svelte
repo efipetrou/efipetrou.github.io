@@ -26,7 +26,7 @@
 
 <div class="w-full mb-4 sm:w-4/5 xl:w-1/2 4xl:w-2/5 4xl:mb-12">
   <Logo class="float-left w-10 h-10 mt-2 mr-2 sm:w-12 sm:h-12 lg:w-14 lg:h-14 2xl:w-24 2xl:h-24 4xl:w-32 4xl:h-32" />
-  <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">Currently working as a Product Designer at Mediahuis, previously serving as Design System Manager, with responsibilities spanning design ops.</p>
+  <p class="text-base sm:text-lg lg:text-2xl 2xl:text-3xl 4xl:text-4xl">Worked as a Product Designer at Mediahuis, previously serving as Design System Manager, with responsibilities spanning design ops.</p>
 </div>
 
 <ProjectBlock moveUp={true}>
