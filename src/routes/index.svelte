@@ -141,7 +141,7 @@
 		<div class="pt-16 mt-2 mb-4 lg:pt-0 sm:mt-4 lg:mb-0 lg:block lg:fixed lg:bottom-8" class:hidden={projectAfter1}>
 			<h4 class="text-sm font-bold sm:text-base 2xl:text-2xl 4xl:text-3xl 2xl:mb-1">Product Designer</h4>
 			<h1 class="text-xl sm:text-2xl 2xl:text-4xl 4xl:text-5xl 2xl:mb-3 efi">EFI PETROU</h1>
-			<p class="text-base lg:w-5/12 3xl:w-1/4 sm:text-lg 2xl:text-3xl 4xl:text-4xl">Born to be creative and honed into a critical-thinking perfectionist, I bring a well-rounded background that fuels my inspiration. I firmly believe that teams create optimal solutions, and I excel in collaboration while also taking initiative. With a keen ability to empathise with people, I am exploring the dynamic field of Design in the Netherlands.</p>
+			<p class="text-base lg:w-5/12 3xl:w-1/4 sm:text-lg 2xl:text-3xl 4xl:text-4xl">Product designer with five years on complex, information-heavy products. Design systems across five brands, data-visualisation workshops across the Netherlands and Belgium, and turning dense workflows into screens people can actually use. I'm looking for my next role where I can take ownership and stay for the long run. Based in Haarlem, available now.</p>
 		</div>
 	</div>
 
