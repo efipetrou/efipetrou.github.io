@@ -30,6 +30,16 @@
 </div>
 
 <ProjectBlock moveUp={true}>
+  <span slot="title" class="sm:mt-8">Data Visualisation</span>
+  <span slot="text">
+    <p>Following the Chameleon White Label design system, this project involved creating templates for various entities within the Mediahuis ecosystem. The templates incorporate Mediahuis' brand identity, ensuring consistency in colours, typography, and overall visual language. The outcome is a set of versatile templates that effectively communicate data while aligning with the brand's design standards.</p>
+  </span>
+  <div slot="images" class="w-full mb-4 sm:w-1/2 sm:pt-8 sm:px-8 4xl:pb-24">
+    <img src={DataVisualisation} alt="Data Visualisation">
+  </div>
+</ProjectBlock>
+
+<ProjectBlock moveUp={true}>
   <span slot="title" class="sm:mt-8">Telegraaf's Design System</span>
   <span slot="text">
     <p class="mb-4">The exercise involves maintaining and updating the primary design system for Mediahuis' most complex initiative. Significant updates included the introduction of new, consistent colour palettes designed with accessibility standards in mind.</p>
@@ -96,16 +106,6 @@
   </span>
   <div slot="images" class="w-full mb-4 sm:w-1/2 sm:pt-8 sm:px-8 4xl:pb-24">
     <img src={CRO} alt="Telegraaf's Design System" >
-  </div>
-</ProjectBlock>
-
-<ProjectBlock moveUp={true}>
-  <span slot="title" class="sm:mt-8">Data Visualisation</span>
-  <span slot="text">
-    <p>Following the Chameleon White Label design system, this project involved creating templates for various entities within the Mediahuis ecosystem. The templates incorporate Mediahuis' brand identity, ensuring consistency in colours, typography, and overall visual language. The outcome is a set of versatile templates that effectively communicate data while aligning with the brand's design standards.</p>
-  </span>
-  <div slot="images" class="w-full mb-4 sm:w-1/2 sm:pt-8 sm:px-8 4xl:pb-24">
-    <img src={DataVisualisation} alt="Data Visualisation">
   </div>
 </ProjectBlock>
 
